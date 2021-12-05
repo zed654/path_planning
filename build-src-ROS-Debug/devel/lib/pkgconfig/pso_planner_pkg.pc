@@ -1,0 +1,8 @@
+prefix=/home/a/path_planning_ws/build-src-ROS-Debug/devel
+
+Name: pso_planner_pkg
+Description: Description of pso_planner_pkg
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib -lpso_planner_pkg
+Requires: roscpp std_msgs

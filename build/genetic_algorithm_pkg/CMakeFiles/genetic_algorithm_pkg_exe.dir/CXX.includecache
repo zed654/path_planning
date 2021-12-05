@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/a/path_planning_ws/src/genetic_algorithm_pkg/src/main.cpp
+iostream
+-
+string
+-
+vector
+-
+bitset
+-
+cmath
+-
+utility
+-
+stdlib.h
+-
+time.h
+-
+unistd.h
+-
+

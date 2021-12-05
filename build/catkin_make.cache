@@ -1,0 +1,2 @@
+a_star_algorithm_pkg:genetic_algorithm_pkg:grid_algorithm_pkg:hybrid_a_star_algorithm_pkg:pso_planner_pkg
+-DCATKIN_DEVEL_PREFIX=/home/a/path_planning_ws/devel -DCMAKE_INSTALL_PREFIX=/home/a/path_planning_ws/install -G Unix Makefiles

@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/a/path_planning_ws/build-src-ROS-Debug/devel/setup.sh

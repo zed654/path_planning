@@ -1,0 +1,16 @@
+
+	2020.07.07
+		- Greedy처럼 동작하는 Hybrid A* 수정 (A) 작업 전 백업
+
+	2020.07.08
+		- 2020.07.07 (A) 작업 완료
+
+	2020.07.09.02.28
+		- 노드 증식 단계에서 후진 노드 생성 제거 추가. 
+
+	2020.07.09.23.02
+		- Attractive Potential을 Exp에서 Polyfit으로 변경 
+			(Potential Func -> z , Polyfit -> y=f(x) )
+			( z = [f(x)-y]^2 - sqrt(x^2+y^2) + Offset(5), f(x)-y = 0  )
+		- Repulsive Potential추가 후, 회피 경로 생성 확인 완료
+		- Cost.g 에 대한 추가 여부 확인해야함. 
