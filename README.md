@@ -53,6 +53,10 @@
 		테스트 코드 rosrun genetic_algorithm_pkg genetic_algorithm_pkg_exe
 
 
+	4. PSO Algorithm
+
+		Not working well ,,
+
  -----------------------------------------------------
 
  - Version
