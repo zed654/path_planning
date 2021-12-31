@@ -1,0 +1,272 @@
+[0.126s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'hybrid_a_star_algorithm_pkg']
+[0.126s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fb92e342a20>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=['hybrid_a_star_algorithm_pkg'], packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=16, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fb92e342a20>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fb92e342d68>)
+[0.130s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.130s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.130s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.130s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.130s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.130s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.130s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/neubility/path_planning_ws/path_planning'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(backup) by extensions ['ignore', 'ignore_ament_install']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(backup) by extension 'ignore'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(backup) by extension 'ignore_ament_install'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(backup) by extensions ['colcon_pkg']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(backup) by extension 'colcon_pkg'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(backup) by extensions ['colcon_meta']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(backup) by extension 'colcon_meta'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(backup) by extensions ['ros']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(backup) by extension 'ros'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(backup) by extensions ['cmake', 'python']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(backup) by extension 'cmake'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(backup) by extension 'python'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(backup) by extensions ['python_setup_py']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(backup) by extension 'python_setup_py'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extensions ['ignore', 'ignore_ament_install']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'ignore'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'ignore_ament_install'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extensions ['colcon_pkg']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'colcon_pkg'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extensions ['colcon_meta']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'colcon_meta'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extensions ['ros']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'ros'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extensions ['cmake', 'python']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'cmake'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'python'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extensions ['python_setup_py']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'python_setup_py'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(img/delete) by extensions ['ignore', 'ignore_ament_install']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(img/delete) by extension 'ignore'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(img/delete) by extension 'ignore_ament_install'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(img/delete) by extensions ['colcon_pkg']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(img/delete) by extension 'colcon_pkg'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(img/delete) by extensions ['colcon_meta']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(img/delete) by extension 'colcon_meta'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(img/delete) by extensions ['ros']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(img/delete) by extension 'ros'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(img/delete) by extensions ['cmake', 'python']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(img/delete) by extension 'cmake'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(img/delete) by extension 'python'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(img/delete) by extensions ['python_setup_py']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(img/delete) by extension 'python_setup_py'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(img/result) by extensions ['ignore', 'ignore_ament_install']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(img/result) by extension 'ignore'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(img/result) by extension 'ignore_ament_install'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(img/result) by extensions ['colcon_pkg']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(img/result) by extension 'colcon_pkg'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(img/result) by extensions ['colcon_meta']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(img/result) by extension 'colcon_meta'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(img/result) by extensions ['ros']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(img/result) by extension 'ros'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(img/result) by extensions ['cmake', 'python']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(img/result) by extension 'cmake'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(img/result) by extension 'python'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(img/result) by extensions ['python_setup_py']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(img/result) by extension 'python_setup_py'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(img/result/1) by extensions ['ignore', 'ignore_ament_install']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(img/result/1) by extension 'ignore'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(img/result/1) by extension 'ignore_ament_install'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(img/result/1) by extensions ['colcon_pkg']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(img/result/1) by extension 'colcon_pkg'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(img/result/1) by extensions ['colcon_meta']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(img/result/1) by extension 'colcon_meta'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(img/result/1) by extensions ['ros']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(img/result/1) by extension 'ros'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(img/result/1) by extensions ['cmake', 'python']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(img/result/1) by extension 'cmake'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(img/result/1) by extension 'python'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(img/result/1) by extensions ['python_setup_py']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(img/result/1) by extension 'python_setup_py'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(img/result/2) by extensions ['ignore', 'ignore_ament_install']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(img/result/2) by extension 'ignore'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(img/result/2) by extension 'ignore_ament_install'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(img/result/2) by extensions ['colcon_pkg']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(img/result/2) by extension 'colcon_pkg'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(img/result/2) by extensions ['colcon_meta']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(img/result/2) by extension 'colcon_meta'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(img/result/2) by extensions ['ros']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(img/result/2) by extension 'ros'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(img/result/2) by extensions ['cmake', 'python']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(img/result/2) by extension 'cmake'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(img/result/2) by extension 'python'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(img/result/2) by extensions ['python_setup_py']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(img/result/2) by extension 'python_setup_py'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/a_star_algorithm_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/a_star_algorithm_pkg) by extension 'ignore'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/a_star_algorithm_pkg) by extension 'ignore_ament_install'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/a_star_algorithm_pkg) by extensions ['colcon_pkg']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/a_star_algorithm_pkg) by extension 'colcon_pkg'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/a_star_algorithm_pkg) by extensions ['colcon_meta']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/a_star_algorithm_pkg) by extension 'colcon_meta'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/a_star_algorithm_pkg) by extensions ['ros']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/a_star_algorithm_pkg) by extension 'ros'
+[0.146s] DEBUG:colcon.colcon_core.package_identification:Package 'src/a_star_algorithm_pkg' with type 'ros.catkin' and name 'a_star_algorithm_pkg'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/genetic_algorithm_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/genetic_algorithm_pkg) by extension 'ignore'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/genetic_algorithm_pkg) by extension 'ignore_ament_install'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/genetic_algorithm_pkg) by extensions ['colcon_pkg']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/genetic_algorithm_pkg) by extension 'colcon_pkg'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/genetic_algorithm_pkg) by extensions ['colcon_meta']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/genetic_algorithm_pkg) by extension 'colcon_meta'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/genetic_algorithm_pkg) by extensions ['ros']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/genetic_algorithm_pkg) by extension 'ros'
+[0.147s] DEBUG:colcon.colcon_core.package_identification:Package 'src/genetic_algorithm_pkg' with type 'ros.catkin' and name 'genetic_algorithm_pkg'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/grid_algorithm_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/grid_algorithm_pkg) by extension 'ignore'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/grid_algorithm_pkg) by extension 'ignore_ament_install'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/grid_algorithm_pkg) by extensions ['colcon_pkg']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/grid_algorithm_pkg) by extension 'colcon_pkg'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/grid_algorithm_pkg) by extensions ['colcon_meta']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/grid_algorithm_pkg) by extension 'colcon_meta'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/grid_algorithm_pkg) by extensions ['ros']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/grid_algorithm_pkg) by extension 'ros'
+[0.148s] DEBUG:colcon.colcon_core.package_identification:Package 'src/grid_algorithm_pkg' with type 'ros.catkin' and name 'grid_algorithm_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/hybrid_a_star_algorithm_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/hybrid_a_star_algorithm_pkg) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/hybrid_a_star_algorithm_pkg) by extension 'ignore_ament_install'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/hybrid_a_star_algorithm_pkg) by extensions ['colcon_pkg']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/hybrid_a_star_algorithm_pkg) by extension 'colcon_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/hybrid_a_star_algorithm_pkg) by extensions ['colcon_meta']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/hybrid_a_star_algorithm_pkg) by extension 'colcon_meta'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/hybrid_a_star_algorithm_pkg) by extensions ['ros']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/hybrid_a_star_algorithm_pkg) by extension 'ros'
+[0.149s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hybrid_a_star_algorithm_pkg' with type 'ros.ament_cmake' and name 'hybrid_a_star_algorithm_pkg'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/pso_planner_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/pso_planner_pkg) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/pso_planner_pkg) by extension 'ignore_ament_install'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/pso_planner_pkg) by extensions ['colcon_pkg']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/pso_planner_pkg) by extension 'colcon_pkg'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/pso_planner_pkg) by extensions ['colcon_meta']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/pso_planner_pkg) by extension 'colcon_meta'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/pso_planner_pkg) by extensions ['ros']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/pso_planner_pkg) by extension 'ros'
+[0.150s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pso_planner_pkg' with type 'ros.catkin' and name 'pso_planner_pkg'
+[0.150s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.150s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.150s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.150s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.150s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.164s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'a_star_algorithm_pkg' in 'src/a_star_algorithm_pkg'
+[0.164s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'genetic_algorithm_pkg' in 'src/genetic_algorithm_pkg'
+[0.164s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'grid_algorithm_pkg' in 'src/grid_algorithm_pkg'
+[0.164s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'pso_planner_pkg' in 'src/pso_planner_pkg'
+[0.166s] Level 5:colcon.colcon_core.verb:set package 'hybrid_a_star_algorithm_pkg' build argument 'cmake_args' from command line to 'None'
+[0.166s] Level 5:colcon.colcon_core.verb:set package 'hybrid_a_star_algorithm_pkg' build argument 'cmake_target' from command line to 'None'
+[0.166s] Level 5:colcon.colcon_core.verb:set package 'hybrid_a_star_algorithm_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.166s] Level 5:colcon.colcon_core.verb:set package 'hybrid_a_star_algorithm_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.166s] Level 5:colcon.colcon_core.verb:set package 'hybrid_a_star_algorithm_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.166s] Level 5:colcon.colcon_core.verb:set package 'hybrid_a_star_algorithm_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.166s] Level 5:colcon.colcon_core.verb:set package 'hybrid_a_star_algorithm_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.166s] Level 5:colcon.colcon_core.verb:set package 'hybrid_a_star_algorithm_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.166s] Level 5:colcon.colcon_core.verb:set package 'hybrid_a_star_algorithm_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.166s] DEBUG:colcon.colcon_core.verb:Building package 'hybrid_a_star_algorithm_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/neubility/path_planning_ws/path_planning/build/hybrid_a_star_algorithm_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg', 'merge_install': False, 'path': '/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.166s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.168s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.168s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg' with build type 'ament_cmake'
+[0.169s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg'
+[0.172s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.172s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.172s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.174s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/eloquent'
+[0.184s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/neubility/path_planning_ws/path_planning/build/hybrid_a_star_algorithm_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake --build /home/neubility/path_planning_ws/path_planning/build/hybrid_a_star_algorithm_pkg -- -j16 -l16
+[5.098s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/neubility/path_planning_ws/path_planning/build/hybrid_a_star_algorithm_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake --build /home/neubility/path_planning_ws/path_planning/build/hybrid_a_star_algorithm_pkg -- -j16 -l16
+[5.149s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/neubility/path_planning_ws/path_planning/build/hybrid_a_star_algorithm_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake --build /home/neubility/path_planning_ws/path_planning/build/hybrid_a_star_algorithm_pkg --target install -- -j16 -l16
+[5.264s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hybrid_a_star_algorithm_pkg)
+[5.266s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/neubility/path_planning_ws/path_planning/build/hybrid_a_star_algorithm_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake --build /home/neubility/path_planning_ws/path_planning/build/hybrid_a_star_algorithm_pkg --target install -- -j16 -l16
+[5.271s] Level 1:colcon.colcon_core.environment:checking '/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg' for CMake module files
+[5.273s] Level 1:colcon.colcon_core.environment:checking '/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg' for CMake config files
+[5.273s] Level 1:colcon.colcon_core.shell:create_environment_hook('hybrid_a_star_algorithm_pkg', 'cmake_prefix_path')
+[5.274s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/hybrid_a_star_algorithm_pkg/hook/cmake_prefix_path.ps1'
+[5.275s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/hybrid_a_star_algorithm_pkg/hook/cmake_prefix_path.dsv'
+[5.275s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/hybrid_a_star_algorithm_pkg/hook/cmake_prefix_path.sh'
+[5.276s] Level 1:colcon.colcon_core.environment:checking '/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/lib'
+[5.276s] Level 1:colcon.colcon_core.environment:checking '/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/bin'
+[5.276s] Level 1:colcon.colcon_core.environment:checking '/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/lib/pkgconfig/hybrid_a_star_algorithm_pkg.pc'
+[5.277s] Level 1:colcon.colcon_core.environment:checking '/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/lib/python3.6/site-packages'
+[5.277s] INFO:colcon.colcon_core.shell:Creating package script '/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/hybrid_a_star_algorithm_pkg/package.ps1'
+[5.278s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/hybrid_a_star_algorithm_pkg/package.dsv'
+[5.278s] INFO:colcon.colcon_core.shell:Creating package script '/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/hybrid_a_star_algorithm_pkg/package.sh'
+[5.279s] INFO:colcon.colcon_core.shell:Creating package script '/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/hybrid_a_star_algorithm_pkg/package.bash'
+[5.279s] INFO:colcon.colcon_core.shell:Creating package script '/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/hybrid_a_star_algorithm_pkg/package.zsh'
+[5.280s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/colcon-core/packages/hybrid_a_star_algorithm_pkg)
+[5.319s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hybrid_a_star_algorithm_pkg)
+[5.322s] Level 1:colcon.colcon_core.environment:checking '/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg' for CMake module files
+[5.323s] Level 1:colcon.colcon_core.environment:checking '/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg' for CMake config files
+[5.324s] Level 1:colcon.colcon_core.shell:create_environment_hook('hybrid_a_star_algorithm_pkg', 'cmake_prefix_path')
+[5.325s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/hybrid_a_star_algorithm_pkg/hook/cmake_prefix_path.ps1'
+[5.325s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/hybrid_a_star_algorithm_pkg/hook/cmake_prefix_path.dsv'
+[5.326s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/hybrid_a_star_algorithm_pkg/hook/cmake_prefix_path.sh'
+[5.326s] Level 1:colcon.colcon_core.environment:checking '/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/lib'
+[5.326s] Level 1:colcon.colcon_core.environment:checking '/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/bin'
+[5.326s] Level 1:colcon.colcon_core.environment:checking '/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/lib/pkgconfig/hybrid_a_star_algorithm_pkg.pc'
+[5.327s] Level 1:colcon.colcon_core.environment:checking '/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/lib/python3.6/site-packages'
+[5.327s] INFO:colcon.colcon_core.shell:Creating package script '/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/hybrid_a_star_algorithm_pkg/package.ps1'
+[5.327s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/hybrid_a_star_algorithm_pkg/package.dsv'
+[5.328s] INFO:colcon.colcon_core.shell:Creating package script '/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/hybrid_a_star_algorithm_pkg/package.sh'
+[5.328s] INFO:colcon.colcon_core.shell:Creating package script '/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/hybrid_a_star_algorithm_pkg/package.bash'
+[5.328s] INFO:colcon.colcon_core.shell:Creating package script '/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/hybrid_a_star_algorithm_pkg/package.zsh'
+[5.329s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/colcon-core/packages/hybrid_a_star_algorithm_pkg)
+[5.329s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.330s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.330s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.330s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.350s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.350s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.350s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.353s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.354s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/neubility/path_planning_ws/path_planning/install/local_setup.ps1'
+[5.354s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/neubility/path_planning_ws/path_planning/install/_local_setup_util_ps1.py'
+[5.356s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/neubility/path_planning_ws/path_planning/install/setup.ps1'
+[5.358s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/neubility/path_planning_ws/path_planning/install/local_setup.sh'
+[5.358s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/neubility/path_planning_ws/path_planning/install/_local_setup_util_sh.py'
+[5.359s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/neubility/path_planning_ws/path_planning/install/setup.sh'
+[5.361s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/neubility/path_planning_ws/path_planning/install/local_setup.bash'
+[5.361s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/neubility/path_planning_ws/path_planning/install/setup.bash'
+[5.363s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/neubility/path_planning_ws/path_planning/install/local_setup.zsh'
+[5.363s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/neubility/path_planning_ws/path_planning/install/setup.zsh'

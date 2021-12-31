@@ -6,9 +6,10 @@
 #include <cmath>
 #include <unistd.h>
 
-#include <Eigen-3.3/Eigen/Core>
-#include <Eigen-3.3/Eigen/QR>
-
+// #include <Eigen-3.3/Eigen/Core>
+// #include <Eigen-3.3/Eigen/QR>
+#include <eigen3/Eigen/Core>
+#include <eigen3/Eigen/QR>
 // FIXME: Set to Visualize
 // FIXME: Set to Visualize
 // FIXME: Set to Visualize
@@ -411,7 +412,7 @@ public:
         // radius.push_back(8.00);
         // radius.push_back(3.20);
 
-        // 
+        //
 //        radius.push_back(-20.0); // ??? FIXME:
         radius.push_back(-27.0); // 얘가 약 30도 인듯
         radius.push_back(-32.0);
@@ -519,7 +520,7 @@ public:
                 // U_rep += PotentialExp(ego_x_tmp - obstacles_[i].first, ego_y_tmp - obstacles_[i].second) * 1000000000; // 지은학생 LiDAR 기반 [c] ([b]에 0 1개 더 준 것)
                 U_rep += PotentialExp(ego_x_tmp - obstacles_[i].first, ego_y_tmp - obstacles_[i].second) * 10000000000; // 지은학생 LiDAR 기반 [d] ([c]에 0 1개 더 준 것)
                 // -> [a], [b] 모두 LiDAR를 보정하면 될 듯?
-                
+
                 // U_rep += PotentialExp(ego_x_tmp - obstacles_[i].first, ego_y_tmp - obstacles_[i].second) * 100000000;
 
                 // if(U_rep > 5)

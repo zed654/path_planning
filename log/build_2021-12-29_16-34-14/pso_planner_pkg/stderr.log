@@ -1,0 +1,8 @@
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:16:10:[m[K [01;31m[Kfatal error: [m[KEigen-3.3/Eigen/Core: No such file or directory
+ #include [01;31m[K<Eigen-3.3/Eigen/Core>[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/pso_planner_pkg.dir/src/main.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/pso_planner_pkg.dir/all] Error 2
+make: *** [all] Error 2

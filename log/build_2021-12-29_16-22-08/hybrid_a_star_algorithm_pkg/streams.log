@@ -1,0 +1,97 @@
+[0.013s] Invoking command in '/home/neubility/path_planning_ws/path_planning/build/hybrid_a_star_algorithm_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake --build /home/neubility/path_planning_ws/path_planning/build/hybrid_a_star_algorithm_pkg -- -j16 -l16
+[0.069s] [35m[1mScanning dependencies of target hybrid_a_star_algorithm_pkg[0m
+[0.086s] [ 33%] [32mBuilding CXX object CMakeFiles/hybrid_a_star_algorithm_pkg.dir/src/main.cpp.o[0m
+[0.932s] In file included from [01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:12:0[m[K:
+[0.932s] [01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:[m[K In constructor ‘[01m[KHybridAstar::HybridAstar(double, double, double, double)[m[K’:
+[0.932s] [01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:88:12:[m[K [01;35m[Kwarning: [m[K‘[01m[KHybridAstar::threshold_distance_for_stop[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+[0.932s]      double [01;35m[Kthreshold_distance_for_stop[m[K;
+[0.932s]             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.932s] [01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:87:9:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kint HybridAstar::init_pos_index[m[K’ [[01;35m[K-Wreorder[m[K]
+[0.932s]      int [01;35m[Kinit_pos_index[m[K;
+[0.932s]          [01;35m[K^~~~~~~~~~~~~~[m[K
+[0.932s] [01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:106:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+[0.932s]      [01;35m[KHybridAstar[m[K(double init_x_, double init_y_, double target_x_, double target_y_)
+[0.933s]      [01;35m[K^~~~~~~~~~~[m[K
+[0.933s] [01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:87:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KHybridAstar::init_pos_index[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+[0.933s]      int [01;35m[Kinit_pos_index[m[K;
+[0.933s]          [01;35m[K^~~~~~~~~~~~~~[m[K
+[0.933s] [01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:74:9:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kint HybridAstar::oc_size_row[m[K’ [[01;35m[K-Wreorder[m[K]
+[0.933s]      int [01;35m[Koc_size_row[m[K;
+[0.933s]          [01;35m[K^~~~~~~~~~~[m[K
+[0.933s] [01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:106:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+[0.933s]      [01;35m[KHybridAstar[m[K(double init_x_, double init_y_, double target_x_, double target_y_)
+[0.933s]      [01;35m[K^~~~~~~~~~~[m[K
+[0.933s] [01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:90:12:[m[K [01;35m[Kwarning: [m[K‘[01m[KHybridAstar::length_arc[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+[0.933s]      double [01;35m[Klength_arc[m[K;
+[0.933s]             [01;35m[K^~~~~~~~~~[m[K
+[0.933s] [01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:78:12:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kdouble HybridAstar::init_offset_x[m[K’ [[01;35m[K-Wreorder[m[K]
+[0.933s]      double [01;35m[Kinit_offset_x[m[K;
+[0.933s]             [01;35m[K^~~~~~~~~~~~~[m[K
+[0.933s] [01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:106:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+[0.933s]      [01;35m[KHybridAstar[m[K(double init_x_, double init_y_, double target_x_, double target_y_)
+[0.933s]      [01;35m[K^~~~~~~~~~~[m[K
+[0.935s] [01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:[m[K In member function ‘[01m[Kbool HybridAstar::Run(Eigen::VectorXd, std::vector<std::pair<double, double> >)[m[K’:
+[0.935s] [01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:163:27:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[0.935s]          for (int i = 0; [01;35m[Ki < this->node.size()[m[K; i++)
+[0.935s]                          [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[0.935s] [01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:168:26:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around comparison in operand of ‘[01m[K|[m[K’ [[01;35m[K-Wparentheses[m[K]
+[0.935s]              if ([01;35m[Koc_y_tmp < 0[m[K | oc_x_tmp < 0)
+[0.936s]                  [01;35m[K~~~~~~~~~^~~[m[K
+[0.938s] [01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:[m[K In member function ‘[01m[Kstd::vector<Node> HybridAstar::UpdateNode(Node*, Eigen::VectorXd&, std::vector<std::pair<double, double> >&)[m[K’:
+[0.939s] [01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:451:27:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[0.939s]          for (int i = 0; [01;35m[Ki < radius.size()[m[K; i++)
+[0.939s]                          [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[0.939s] [01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:475:24:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangle_deg[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[0.939s]                  double [01;35m[Kangle_deg[m[K = std::acos(cos_theta) * 180. / M_PI; // 얘는 안씀. cos_theta가 1.00001 혹은 -1.00001 값이 나오면 std::acos가 nan으로 발산하는 값을 리턴함.
+[0.939s]                         [01;35m[K^~~~~~~~~[m[K
+[0.939s] [01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:491:27:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[0.939s]          for (int i = 0; [01;35m[Ki < updated_node_list_tmp.size()[m[K; i++)
+[0.939s]                          [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.939s] [01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:506:31:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[0.939s]              for (int i = 0; [01;35m[Ki < obstacles_.size()[m[K; i++)
+[0.939s]                              [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[0.940s] [01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:430:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcost_g_offset[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[0.940s]          double [01;35m[Kcost_g_offset[m[K = 100; //0.35; // Origin : 100.0
+[0.940s]                 [01;35m[K^~~~~~~~~~~~~[m[K
+[0.967s] [01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[0.968s] [01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:105:27:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around comparison in operand of ‘[01m[K&[m[K’ [[01;35m[K-Wparentheses[m[K]
+[0.968s]                  if( [01;35m[Kb_tmp > 215[m[K & (r_tmp + g_tmp + b_tmp < 590))
+[0.968s]                      [01;35m[K~~~~~~^~~~~[m[K
+[0.968s] [01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:118:23:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[0.968s]      for (int i = 0; [01;35m[Ki < waypoints.size()[m[K; i++)
+[0.968s]                      [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[0.974s] [01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:159:23:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[0.974s]      for (int i = 0; [01;35m[Ki < h_astar2.local_x.size()[m[K; i++)
+[0.975s]                      [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.976s] [01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:190:22:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[0.976s]      for(int i = 0; [01;35m[Ki < local_xy_tmp.size()-1[m[K; i++)
+[0.977s]                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.977s] [01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:140:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KnCount_tmp[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[0.977s]      int [01;35m[KnCount_tmp[m[K = 0;
+[0.977s]          [01;35m[K^~~~~~~~~~[m[K
+[4.524s] [ 66%] [32m[1mLinking CXX executable hybrid_a_star_algorithm_pkg[0m
+[4.908s] [100%] Built target hybrid_a_star_algorithm_pkg
+[4.927s] Invoked command in '/home/neubility/path_planning_ws/path_planning/build/hybrid_a_star_algorithm_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake --build /home/neubility/path_planning_ws/path_planning/build/hybrid_a_star_algorithm_pkg -- -j16 -l16
+[4.977s] Invoking command in '/home/neubility/path_planning_ws/path_planning/build/hybrid_a_star_algorithm_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake --build /home/neubility/path_planning_ws/path_planning/build/hybrid_a_star_algorithm_pkg --target install -- -j16 -l16
+[5.047s] [100%] Built target hybrid_a_star_algorithm_pkg
+[5.078s] [36mInstall the project...[0m
+[5.089s] -- Install configuration: ""
+[5.090s] -- Installing: /home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/lib/hybrid_a_star_algorithm_pkg/hybrid_a_star_algorithm_pkg
+[5.091s] -- Set runtime path of "/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/lib/hybrid_a_star_algorithm_pkg/hybrid_a_star_algorithm_pkg" to ""
+[5.091s] -- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/hybrid_a_star_algorithm_pkg/launch
+[5.091s] -- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/ament_index/resource_index/package_run_dependencies/hybrid_a_star_algorithm_pkg
+[5.092s] -- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/ament_index/resource_index/parent_prefix_path/hybrid_a_star_algorithm_pkg
+[5.092s] -- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/hybrid_a_star_algorithm_pkg/environment/ament_prefix_path.sh
+[5.092s] -- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/hybrid_a_star_algorithm_pkg/environment/ament_prefix_path.dsv
+[5.092s] -- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/hybrid_a_star_algorithm_pkg/environment/path.sh
+[5.092s] -- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/hybrid_a_star_algorithm_pkg/environment/path.dsv
+[5.092s] -- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/hybrid_a_star_algorithm_pkg/local_setup.bash
+[5.092s] -- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/hybrid_a_star_algorithm_pkg/local_setup.sh
+[5.092s] -- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/hybrid_a_star_algorithm_pkg/local_setup.zsh
+[5.092s] -- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/hybrid_a_star_algorithm_pkg/local_setup.dsv
+[5.092s] -- Installing: /home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/hybrid_a_star_algorithm_pkg/package.dsv
+[5.092s] -- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/ament_index/resource_index/packages/hybrid_a_star_algorithm_pkg
+[5.092s] -- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/hybrid_a_star_algorithm_pkg/cmake/hybrid_a_star_algorithm_pkgConfig.cmake
+[5.092s] -- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/hybrid_a_star_algorithm_pkg/cmake/hybrid_a_star_algorithm_pkgConfig-version.cmake
+[5.092s] -- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg/share/hybrid_a_star_algorithm_pkg/package.xml
+[5.096s] Invoked command in '/home/neubility/path_planning_ws/path_planning/build/hybrid_a_star_algorithm_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake --build /home/neubility/path_planning_ws/path_planning/build/hybrid_a_star_algorithm_pkg --target install -- -j16 -l16

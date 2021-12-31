@@ -1,0 +1,78 @@
+In file included from [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:8:0[m[K:
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:[m[K In constructor ‘[01m[KPSOPlanner::PSOPlanner()[m[K’:
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:106:15:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+         [01;35m[Kthis->m_personal_best_array_index[m[K;
+         [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:107:15:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+         [01;35m[Kthis->m_global_best_array_index[m[K;
+         [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:108:15:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+         [01;35m[Kthis->m_swarm[m[K;
+         [01;35m[K~~~~~~^~~~~~~[m[K
+In file included from [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:8:0[m[K:
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:[m[K In member function ‘[01m[Kvoid PSOPlanner::update_new_node_fitness_value()[m[K’:
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:151:27:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+         for (int i = 0; [01;35m[Ki < this->m_swarm.size()[m[K; i++)
+                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:8:0[m[K:
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:[m[K In member function ‘[01m[Kvoid PSOPlanner::renew_personal_best_position()[m[K’:
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:190:15:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+         [01;35m[Kthis->m_personal_best_array_index[m[K; // std::vector<int>
+         [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:191:27:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+         for (int i = 0; [01;35m[Ki < this->m_swarm.size()[m[K; i++)
+                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:194:31:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+             for (int j = 0; [01;35m[Kj < this->m_swarm[i].size()[m[K; j++)
+                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:[m[K In member function ‘[01m[Kvoid PSOPlanner::renew_global_best_position()[m[K’:
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:207:15:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+         [01;35m[Kthis->m_global_best_array_index[m[K; // std::pair<int, int>
+         [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:[m[K In member function ‘[01m[Kvoid PSOPlanner::update_new_swarm()[m[K’:
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:232:27:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+         for (int i = 0; [01;35m[Ki < this->m_swarm.size()[m[K; i++)
+                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:237:31:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+             for (int k = 0; [01;35m[Kk < this->m_swarm[i][swarm_depth_end_index].particles.size()[m[K; k++)
+                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:296:27:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+         for (int i = 0; [01;35m[Ki < x_swarm.size()[m[K; i++)
+                         [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:297:31:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+             for (int j = 0; [01;35m[Kj < x_swarm[i].size()[m[K; j++)
+                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:304:27:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+         for (int i = 0; [01;35m[Ki < y_swarm.size()[m[K; i++)
+                         [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:305:31:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+             for (int j = 0; [01;35m[Kj < y_swarm[i].size()[m[K; j++)
+                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:291:16:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kmin_g_x[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+         double [01;35m[Kmin_g_x[m[K = 0;
+                [01;35m[K^~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:292:16:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kmin_g_y[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+         double [01;35m[Kmin_g_y[m[K = 0;
+                [01;35m[K^~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:290:23:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+     for (int i = 0; [01;35m[Ki < pso_result_path_points.size() - 1[m[K; i++)
+                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:83:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Koccupancy_grid_map_width[m[K’ [[01;35m[K-Wunused-variable[m[K]
+     int [01;35m[Koccupancy_grid_map_width[m[K = 959;
+         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:84:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Koccupancy_grid_map_height[m[K’ [[01;35m[K-Wunused-variable[m[K]
+     int [01;35m[Koccupancy_grid_map_height[m[K = 538;
+         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:139:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kinit_pos_x[m[K’ [[01;35m[K-Wunused-variable[m[K]
+     int [01;35m[Kinit_pos_x[m[K = waypoints[0].first;
+         [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:140:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kinit_pos_y[m[K’ [[01;35m[K-Wunused-variable[m[K]
+     int [01;35m[Kinit_pos_y[m[K = waypoints[0].second;
+         [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:141:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktarget_x[m[K’ [[01;35m[K-Wunused-variable[m[K]
+     int [01;35m[Ktarget_x[m[K = waypoints[waypoints.size() - 5].first;
+         [01;35m[K^~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:142:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktarget_y[m[K’ [[01;35m[K-Wunused-variable[m[K]
+     int [01;35m[Ktarget_y[m[K = waypoints[waypoints.size() - 5].second;
+         [01;35m[K^~~~~~~~[m[K

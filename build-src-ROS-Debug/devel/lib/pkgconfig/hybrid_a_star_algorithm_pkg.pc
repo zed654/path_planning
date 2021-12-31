@@ -1,8 +1,0 @@
-prefix=/home/a/path_planning_ws/build-src-ROS-Debug/devel
-
-Name: hybrid_a_star_algorithm_pkg
-Description: Description of hybrid_a_star_algorithm_pkg
-Version: 0.1.0
-Cflags: 
-Libs: -L${prefix}/lib -lhybrid_a_star_algorithm_pkg
-Requires: roscpp std_msgs

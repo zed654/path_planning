@@ -1,0 +1,5 @@
+[35m[1mScanning dependencies of target hybrid_a_star_algorithm_pkg[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/hybrid_a_star_algorithm_pkg.dir/src/main.cpp.o[0m
+CMakeFiles/hybrid_a_star_algorithm_pkg.dir/build.make:62: recipe for target 'CMakeFiles/hybrid_a_star_algorithm_pkg.dir/src/main.cpp.o' failed
+CMakeFiles/Makefile2:131: recipe for target 'CMakeFiles/hybrid_a_star_algorithm_pkg.dir/all' failed
+Makefile:140: recipe for target 'all' failed

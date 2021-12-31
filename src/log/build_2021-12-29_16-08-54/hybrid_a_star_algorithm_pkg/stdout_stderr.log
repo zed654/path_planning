@@ -1,0 +1,229 @@
+-- Found ament_cmake: 0.8.3 (/opt/ros/eloquent/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 0.8.5 (/opt/ros/eloquent/share/rclcpp/cmake)
+-- Found rosidl_adapter: 0.8.3 (/opt/ros/eloquent/share/rosidl_adapter/cmake)
+-- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found std_msgs: 0.8.1 (/opt/ros/eloquent/share/std_msgs/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/neubility/path_planning_ws/path_planning/src/build/hybrid_a_star_algorithm_pkg
+[ 33%] [32mBuilding CXX object CMakeFiles/hybrid_a_star_algorithm_pkg.dir/src/main.cpp.o[0m
+In file included from [01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:12:0[m[K:
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:76:5:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen[m[K’ does not name a type
+     [01;31m[KEigen[m[K::VectorXd WPs_coeff;
+     [01;31m[K^~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:155:14:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen[m[K’ has not been declared
+     bool Run([01;31m[KEigen[m[K::VectorXd coeffs_, std::vector<std::pair<double, double>> obstacles_)
+              [01;31m[K^~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:155:30:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[Kcoeffs_[m[K’
+     bool Run(Eigen::VectorXd [01;31m[Kcoeffs_[m[K, std::vector<std::pair<double, double>> obstacles_)
+                              [01;31m[K^~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:369:52:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen[m[K’ has not been declared
+     std::vector<Node> UpdateNode(Node *stand_node, [01;31m[KEigen[m[K::VectorXd &coeffs_, std::vector<std::pair<double, double>> &obstacles_)
+                                                    [01;31m[K^~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:369:68:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K&[m[K’ token
+     std::vector<Node> UpdateNode(Node *stand_node, Eigen::VectorXd [01;31m[K&[m[Kcoeffs_, std::vector<std::pair<double, double>> &obstacles_)
+                                                                    [01;31m[K^[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:590:5:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen[m[K’ does not name a type
+     [01;31m[KEigen[m[K::VectorXd PolyFit(Eigen::VectorXd xvals, Eigen::VectorXd yvals, int order)
+     [01;31m[K^~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:607:29:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen[m[K’ has not been declared
+     double GetPotentialCost([01;31m[KEigen[m[K::VectorXd coeffs_, double x_, double y_)
+                             [01;31m[K^~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:607:45:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[Kcoeffs_[m[K’
+     double GetPotentialCost(Eigen::VectorXd [01;31m[Kcoeffs_[m[K, double x_, double y_)
+                                             [01;31m[K^~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:708:21:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen[m[K’ has not been declared
+     double PolyEval([01;31m[KEigen[m[K::VectorXd coeffs, double x)
+                     [01;31m[K^~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:708:37:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[Kcoeffs[m[K’
+     double PolyEval(Eigen::VectorXd [01;31m[Kcoeffs[m[K, double x)
+                                     [01;31m[K^~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:[m[K In constructor ‘[01m[KHybridAstar::HybridAstar(double, double, double, double)[m[K’:
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:87:12:[m[K [01;35m[Kwarning: [m[K‘[01m[KHybridAstar::threshold_distance_for_stop[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+     double [01;35m[Kthreshold_distance_for_stop[m[K;
+            [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:86:9:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kint HybridAstar::init_pos_index[m[K’ [[01;35m[K-Wreorder[m[K]
+     int [01;35m[Kinit_pos_index[m[K;
+         [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:105:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+     [01;35m[KHybridAstar[m[K(double init_x_, double init_y_, double target_x_, double target_y_)
+     [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:86:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KHybridAstar::init_pos_index[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+     int [01;35m[Kinit_pos_index[m[K;
+         [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:73:9:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kint HybridAstar::oc_size_row[m[K’ [[01;35m[K-Wreorder[m[K]
+     int [01;35m[Koc_size_row[m[K;
+         [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:105:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+     [01;35m[KHybridAstar[m[K(double init_x_, double init_y_, double target_x_, double target_y_)
+     [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:89:12:[m[K [01;35m[Kwarning: [m[K‘[01m[KHybridAstar::length_arc[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+     double [01;35m[Klength_arc[m[K;
+            [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:77:12:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kdouble HybridAstar::init_offset_x[m[K’ [[01;35m[K-Wreorder[m[K]
+     double [01;35m[Kinit_offset_x[m[K;
+            [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:105:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+     [01;35m[KHybridAstar[m[K(double init_x_, double init_y_, double target_x_, double target_y_)
+     [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:[m[K In member function ‘[01m[Kbool HybridAstar::Run(int)[m[K’:
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:162:27:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+         for (int i = 0; [01;35m[Ki < this->node.size()[m[K; i++)
+                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:167:26:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around comparison in operand of ‘[01m[K|[m[K’ [[01;35m[K-Wparentheses[m[K]
+             if ([01;35m[Koc_y_tmp < 0[m[K | oc_x_tmp < 0)
+                 [01;35m[K~~~~~~~~~^~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:239:84:[m[K [01;31m[Kerror: [m[K‘[01m[Kcoeffs_[m[K’ was not declared in this scope
+ ctor<struct Node> updated_node_tmp = UpdateNode(&this->node[cur_i], [01;31m[Kcoeffs_[m[K, obstacles_); // Set New Node
+                                                                     [01;31m[K^~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:239:93:[m[K [01;31m[Kerror: [m[K‘[01m[Kobstacles_[m[K’ was not declared in this scope
+ ct Node> updated_node_tmp = UpdateNode(&this->node[cur_i], coeffs_, [01;31m[Kobstacles_[m[K); // Set New Node
+                                                                     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:239:93:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kobstack[m[K’
+ ct Node> updated_node_tmp = UpdateNode(&this->node[cur_i], coeffs_, [01;36m[Kobstacles_[m[K); // Set New Node
+                                                                     [01;36m[K^~~~~~~~~~[m[K
+                                                                                             [32m[Kobstack[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:155:21:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KVectorXd[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+     bool Run(Eigen::[01;35m[KVectorXd[m[K coeffs_, std::vector<std::pair<double, double>> obstacles_)
+                     [01;35m[K^~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:[m[K In member function ‘[01m[Kstd::vector<Node> HybridAstar::UpdateNode(Node*, int)[m[K’:
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:450:27:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+         for (int i = 0; [01;35m[Ki < radius.size()[m[K; i++)
+                         [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:474:24:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangle_deg[m[K’ [[01;35m[K-Wunused-variable[m[K]
+                 double [01;35m[Kangle_deg[m[K = std::acos(cos_theta) * 180. / M_PI; // 얘는 안씀. cos_theta가 1.00001 혹은 -1.00001 값이 나오면 std::acos가 nan으로 발산하는 값을 리턴함.
+                        [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:490:27:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+         for (int i = 0; [01;35m[Ki < updated_node_list_tmp.size()[m[K; i++)
+                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:499:13:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen[m[K’ has not been declared
+             [01;31m[KEigen[m[K::VectorXd coeffs_tmp = coeffs_;
+             [01;31m[K^~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:502:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kcoeffs_tmp[m[K’ was not declared in this scope
+             U_att = GetPotentialCost([01;31m[Kcoeffs_tmp[m[K, ego_x_tmp, ego_y_tmp);
+                                      [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:502:38:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kconfstr[m[K’
+             U_att = GetPotentialCost([01;36m[Kcoeffs_tmp[m[K, ego_x_tmp, ego_y_tmp);
+                                      [01;36m[K^~~~~~~~~~[m[K
+                                      [32m[Kconfstr[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:505:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kobstacles_[m[K’ was not declared in this scope
+             for (int i = 0; i < [01;31m[Kobstacles_[m[K.size(); i++)
+                                 [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:505:33:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kobstack[m[K’
+             for (int i = 0; i < [01;36m[Kobstacles_[m[K.size(); i++)
+                                 [01;36m[K^~~~~~~~~~[m[K
+                                 [32m[Kobstack[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:429:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcost_g_offset[m[K’ [[01;35m[K-Wunused-variable[m[K]
+         double [01;35m[Kcost_g_offset[m[K = 100; //0.35; // Origin : 100.0
+                [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:369:59:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KVectorXd[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+     std::vector<Node> UpdateNode(Node *stand_node, Eigen::[01;35m[KVectorXd[m[K &coeffs_, std::vector<std::pair<double, double>> &obstacles_)
+                                                           [01;35m[K^~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:[m[K In member function ‘[01m[Kdouble HybridAstar::GetPotentialCost(int)[m[K’:
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:609:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kx_[m[K’ was not declared in this scope
+         double x_tmp = ([01;31m[Kx_[m[K - 1000) / 10.;
+                         [01;31m[K^~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:610:25:[m[K [01;31m[Kerror: [m[K‘[01m[Ky_[m[K’ was not declared in this scope
+         double y_tmp = ([01;31m[Ky_[m[K - 1000) / 10.;
+                         [01;31m[K^~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:610:25:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kyn[m[K’
+         double y_tmp = ([01;36m[Ky_[m[K - 1000) / 10.;
+                         [01;36m[K^~[m[K
+                         [32m[Kyn[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:615:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kcoeffs_[m[K’ was not declared in this scope
+         double Poly_Y_Eval = PolyEval([01;31m[Kcoeffs_[m[K, x_);
+                                       [01;31m[K^~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:607:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KVectorXd[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+     double GetPotentialCost(Eigen::[01;35m[KVectorXd[m[K coeffs_, double x_, double y_)
+                                    [01;35m[K^~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:[m[K In member function ‘[01m[Kdouble HybridAstar::PolyEval(int)[m[K’:
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:711:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kcoeffs[m[K’ was not declared in this scope
+         for (int i = 0; i < [01;31m[Kcoeffs[m[K.size(); i++)
+                             [01;31m[K^~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:711:29:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kcosf64[m[K’
+         for (int i = 0; i < [01;36m[Kcoeffs[m[K.size(); i++)
+                             [01;36m[K^~~~~~[m[K
+                             [32m[Kcosf64[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:712:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kx[m[K’ was not declared in this scope
+             result += coeffs[i] * pow([01;31m[Kx[m[K, i);
+                                       [01;31m[K^[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:708:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KVectorXd[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+     double PolyEval(Eigen::[01;35m[KVectorXd[m[K coeffs, double x)
+                            [01;35m[K^~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:[m[K At global scope:
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:26:17:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen[m[K’ has not been declared
+ double PolyEval([01;31m[KEigen[m[K::VectorXd coeffs, double x)
+                 [01;31m[K^~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:26:41:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kdouble[m[K’
+ double PolyEval(Eigen::VectorXd coeffs, [01;31m[Kdouble[m[K x)
+                                         [01;31m[K^~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:26:49:[m[K [01;31m[Kerror: [m[Kexpression list treated as compound expression in initializer [[01;31m[K-fpermissive[m[K]
+ double PolyEval(Eigen::VectorXd coeffs, double x[01;31m[K)[m[K
+                                                 [01;31m[K^[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:34:1:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen[m[K’ does not name a type
+ [01;31m[KEigen[m[K::VectorXd PolyFit(Eigen::VectorXd xvals, Eigen::VectorXd yvals, int order);
+ [01;31m[K^~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:104:27:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around comparison in operand of ‘[01m[K&[m[K’ [[01;35m[K-Wparentheses[m[K]
+                 if( [01;35m[Kb_tmp > 215[m[K & (r_tmp + g_tmp + b_tmp < 590))
+                     [01;35m[K~~~~~~^~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:117:23:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+     for (int i = 0; [01;35m[Ki < waypoints.size()[m[K; i++)
+                     [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:122:5:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen[m[K’ has not been declared
+     [01;31m[KEigen[m[K::Map<Eigen::VectorXd> x_tmp(&WPs_x_tmp2[0], WPs_x_tmp2.size());
+     [01;31m[K^~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:122:16:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen[m[K’ has not been declared
+     Eigen::Map<[01;31m[KEigen[m[K::VectorXd> x_tmp(&WPs_x_tmp2[0], WPs_x_tmp2.size());
+                [01;31m[K^~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:122:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kx_tmp[m[K’ was not declared in this scope
+     Eigen::Map<Eigen::VectorXd> [01;31m[Kx_tmp[m[K(&WPs_x_tmp2[0], WPs_x_tmp2.size());
+                                 [01;31m[K^~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:123:5:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen[m[K’ has not been declared
+     [01;31m[KEigen[m[K::Map<Eigen::VectorXd> y_tmp(&WPs_y_tmp2[0], WPs_y_tmp2.size());
+     [01;31m[K^~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:123:16:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen[m[K’ has not been declared
+     Eigen::Map<[01;31m[KEigen[m[K::VectorXd> y_tmp(&WPs_y_tmp2[0], WPs_y_tmp2.size());
+                [01;31m[K^~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:123:33:[m[K [01;31m[Kerror: [m[K‘[01m[Ky_tmp[m[K’ was not declared in this scope
+     Eigen::Map<Eigen::VectorXd> [01;31m[Ky_tmp[m[K(&WPs_y_tmp2[0], WPs_y_tmp2.size());
+                                 [01;31m[K^~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:124:5:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen[m[K’ has not been declared
+     [01;31m[KEigen[m[K::VectorXd coeffs_tmp2 = PolyFit(x_tmp, y_tmp, 3);
+     [01;31m[K^~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:143:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kcoeffs_tmp2[m[K’ was not declared in this scope
+     while (!h_astar2.Run([01;31m[Kcoeffs_tmp2[m[K, obstacles_tmp))
+                          [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:158:23:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+     for (int i = 0; [01;35m[Ki < h_astar2.local_x.size()[m[K; i++)
+                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:163:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kcoeffs_tmp2[m[K’ was not declared in this scope
+             double error        = std::fabs((PolyEval([01;31m[Kcoeffs_tmp2[m[K, h_astar2.local_x[i])-1000)/10 - (h_astar2.local_y[i]-1000)/10);
+                                                       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:163:87:[m[K [01;31m[Kerror: [m[K‘[01m[KPolyEval[m[K’ cannot be used as a function
+  error        = std::fabs((PolyEval(coeffs_tmp2, h_astar2.local_x[i][01;31m[K)[m[K-1000)/10 - (h_astar2.local_y[i]-1000)/10);
+                                                                     [01;31m[K^[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:164:86:[m[K [01;31m[Kerror: [m[K‘[01m[KPolyEval[m[K’ cannot be used as a function
+ e rms_square   = std::pow((PolyEval(coeffs_tmp2, h_astar2.local_x[i][01;31m[K)[m[K-1000)/10 - (h_astar2.local_y[i]-1000)/10,2);
+                                                                     [01;31m[K^[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:186:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kcoeffs_tmp2[m[K’ was not declared in this scope
+     for(int i = 0; i < [01;31m[Kcoeffs_tmp2[m[K.size(); i++)
+                        [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:189:22:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+     for(int i = 0; [01;35m[Ki < local_xy_tmp.size()-1[m[K; i++)
+                    [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:139:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KnCount_tmp[m[K’ [[01;35m[K-Wunused-variable[m[K]
+     int [01;35m[KnCount_tmp[m[K = 0;
+         [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:[m[K At global scope:
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:222:1:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen[m[K’ does not name a type
+ [01;31m[KEigen[m[K::VectorXd PolyFit(Eigen::VectorXd xvals, Eigen::VectorXd yvals, int order)
+ [01;31m[K^~~~~[m[K
+CMakeFiles/hybrid_a_star_algorithm_pkg.dir/build.make:62: recipe for target 'CMakeFiles/hybrid_a_star_algorithm_pkg.dir/src/main.cpp.o' failed
+make[2]: *** [CMakeFiles/hybrid_a_star_algorithm_pkg.dir/src/main.cpp.o] Error 1
+CMakeFiles/Makefile2:131: recipe for target 'CMakeFiles/hybrid_a_star_algorithm_pkg.dir/all' failed
+Makefile:140: recipe for target 'all' failed
+make[1]: *** [CMakeFiles/hybrid_a_star_algorithm_pkg.dir/all] Error 2
+make: *** [all] Error 2

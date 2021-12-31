@@ -1,0 +1,29 @@
+[0.010s] Invoking command in '/home/neubility/path_planning_ws/path_planning/src/build/hybrid_a_star_algorithm_pkg': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/bin/cmake /home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg -DCMAKE_INSTALL_PREFIX=/home/neubility/path_planning_ws/path_planning/src/install/hybrid_a_star_algorithm_pkg
+[0.028s] -- Found ament_cmake: 0.8.3 (/opt/ros/eloquent/share/ament_cmake/cmake)
+[0.055s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.200s] -- Found rclcpp: 0.8.5 (/opt/ros/eloquent/share/rclcpp/cmake)
+[0.211s] -- Found rosidl_adapter: 0.8.3 (/opt/ros/eloquent/share/rosidl_adapter/cmake)
+[0.232s] -- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)
+[0.233s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.254s] -- Found std_msgs: 0.8.1 (/opt/ros/eloquent/share/std_msgs/cmake)
+[0.343s] -- Configuring done
+[0.369s] -- Generating done
+[0.370s] -- Build files have been written to: /home/neubility/path_planning_ws/path_planning/src/build/hybrid_a_star_algorithm_pkg
+[0.373s] Invoked command in '/home/neubility/path_planning_ws/path_planning/src/build/hybrid_a_star_algorithm_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/bin/cmake /home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg -DCMAKE_INSTALL_PREFIX=/home/neubility/path_planning_ws/path_planning/src/install/hybrid_a_star_algorithm_pkg
+[0.379s] Invoking command in '/home/neubility/path_planning_ws/path_planning/src/build/hybrid_a_star_algorithm_pkg': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/bin/cmake --build /home/neubility/path_planning_ws/path_planning/src/build/hybrid_a_star_algorithm_pkg -- -j16 -l16
+[0.438s] [35m[1mScanning dependencies of target hybrid_a_star_algorithm_pkg[0m
+[0.455s] [ 66%] [32mBuilding CXX object CMakeFiles/hybrid_a_star_algorithm_pkg.dir/src/main.cpp.o[0m
+[0.455s] [ 66%] [32mBuilding CXX object CMakeFiles/hybrid_a_star_algorithm_pkg.dir/src/monitor.cpp.o[0m
+[0.560s] In file included from [01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:12:0[m[K:
+[0.560s] [01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:9:10:[m[K [01;31m[Kfatal error: [m[KEigen-3.3/Eigen/Core: No such file or directory
+[0.560s]  #include [01;31m[K<Eigen-3.3/Eigen/Core>[m[K
+[0.560s]           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.560s] compilation terminated.
+[0.562s] CMakeFiles/hybrid_a_star_algorithm_pkg.dir/build.make:62: recipe for target 'CMakeFiles/hybrid_a_star_algorithm_pkg.dir/src/main.cpp.o' failed
+[0.562s] make[2]: *** [CMakeFiles/hybrid_a_star_algorithm_pkg.dir/src/main.cpp.o] Error 1
+[0.562s] make[2]: *** Waiting for unfinished jobs....
+[0.626s] CMakeFiles/Makefile2:131: recipe for target 'CMakeFiles/hybrid_a_star_algorithm_pkg.dir/all' failed
+[0.627s] make[1]: *** [CMakeFiles/hybrid_a_star_algorithm_pkg.dir/all] Error 2
+[0.627s] make: *** [all] Error 2
+[0.628s] Makefile:140: recipe for target 'all' failed
+[0.631s] Invoked command in '/home/neubility/path_planning_ws/path_planning/src/build/hybrid_a_star_algorithm_pkg' returned '2': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/bin/cmake --build /home/neubility/path_planning_ws/path_planning/src/build/hybrid_a_star_algorithm_pkg -- -j16 -l16

@@ -1,8 +1,0 @@
-prefix=/usr/local
-
-Name: a_star_algorithm_pkg
-Description: Description of a_star_algorithm_pkg
-Version: 0.1.0
-Cflags: 
-Libs: -L${prefix}/lib -la_star_algorithm_pkg
-Requires: roscpp std_msgs

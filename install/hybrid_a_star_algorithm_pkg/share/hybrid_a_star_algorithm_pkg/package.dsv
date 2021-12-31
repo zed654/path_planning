@@ -1,0 +1,8 @@
+source;share/hybrid_a_star_algorithm_pkg/hook/cmake_prefix_path.ps1
+source;share/hybrid_a_star_algorithm_pkg/hook/cmake_prefix_path.dsv
+source;share/hybrid_a_star_algorithm_pkg/hook/cmake_prefix_path.sh
+source;share/hybrid_a_star_algorithm_pkg/local_setup.bash
+source;share/hybrid_a_star_algorithm_pkg/local_setup.dsv
+source;share/hybrid_a_star_algorithm_pkg/local_setup.ps1
+source;share/hybrid_a_star_algorithm_pkg/local_setup.sh
+source;share/hybrid_a_star_algorithm_pkg/local_setup.zsh

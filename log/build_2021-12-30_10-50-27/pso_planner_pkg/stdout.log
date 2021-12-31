@@ -1,0 +1,36 @@
+-- Found ament_cmake: 0.8.3 (/opt/ros/eloquent/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 0.8.5 (/opt/ros/eloquent/share/rclcpp/cmake)
+-- Found rosidl_adapter: 0.8.3 (/opt/ros/eloquent/share/rosidl_adapter/cmake)
+-- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found std_msgs: 0.8.1 (/opt/ros/eloquent/share/std_msgs/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/eloquent/share/eigen3_cmake_module/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg
+[35m[1mScanning dependencies of target pso_planner_pkg[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/pso_planner_pkg.dir/src/main.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable pso_planner_pkg[0m
+[100%] Built target pso_planner_pkg
+[100%] Built target pso_planner_pkg
+[36mInstall the project...[0m
+-- Install configuration: ""
+-- Installing: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/lib/pso_planner_pkg/pso_planner_pkg
+-- Set runtime path of "/home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/lib/pso_planner_pkg/pso_planner_pkg" to ""
+-- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/launch
+-- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/ament_index/resource_index/package_run_dependencies/pso_planner_pkg
+-- Installing: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/ament_index/resource_index/parent_prefix_path/pso_planner_pkg
+-- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/environment/ament_prefix_path.sh
+-- Installing: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/environment/path.sh
+-- Installing: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/environment/path.dsv
+-- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/local_setup.bash
+-- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/local_setup.sh
+-- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/local_setup.zsh
+-- Installing: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/local_setup.dsv
+-- Installing: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/package.dsv
+-- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/ament_index/resource_index/packages/pso_planner_pkg
+-- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/cmake/pso_planner_pkgConfig.cmake
+-- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/cmake/pso_planner_pkgConfig-version.cmake
+-- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/package.xml

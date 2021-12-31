@@ -1,0 +1,69 @@
+[0.013s] Invoking command in '/home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake --build /home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg -- -j16 -l16
+[0.051s] [35m[1mScanning dependencies of target pso_planner_pkg[0m
+[0.063s] [ 33%] [32mBuilding CXX object CMakeFiles/pso_planner_pkg.dir/src/main.cpp.o[0m
+[0.321s] In file included from [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:8:0[m[K:
+[0.321s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:[m[K In constructor ‘[01m[KPSOPlanner::PSOPlanner(int, int, int, int)[m[K’:
+[0.321s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:101:27:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[0.321s]          for (int i = 0; [01;35m[Ki < x_swarm.size()[m[K; i++)
+[0.321s]                          [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[0.321s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:102:31:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[0.321s]              for (int j = 0; [01;35m[Kj < x_swarm[i].size()[m[K; j++)
+[0.321s]                              [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[0.321s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:109:27:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[0.321s]          for (int i = 0; [01;35m[Ki < y_swarm.size()[m[K; i++)
+[0.321s]                          [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[0.321s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:110:31:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[0.321s]              for (int j = 0; [01;35m[Kj < y_swarm[i].size()[m[K; j++)
+[0.321s]                              [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[0.321s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:121:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kn_particles[m[K’ was not declared in this scope
+[0.322s]              for (int i = 0; i < [01;31m[Kn_particles[m[K; i++)
+[0.322s]                                  [01;31m[K^~~~~~~~~~~[m[K
+[0.322s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:121:33:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Km_n_particles[m[K’
+[0.322s]              for (int i = 0; i < [01;36m[Kn_particles[m[K; i++)
+[0.322s]                                  [01;36m[K^~~~~~~~~~~[m[K
+[0.322s]                                  [32m[Km_n_particles[m[K
+[0.322s] In file included from [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:8:0[m[K:
+[0.322s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:137:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kn_particles[m[K’ was not declared in this scope
+[0.322s]                  for (int i = 0; i < [01;31m[Kn_particles[m[K; i++)
+[0.322s]                                      [01;31m[K^~~~~~~~~~~[m[K
+[0.323s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:137:37:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Km_n_particles[m[K’
+[0.323s]                  for (int i = 0; i < [01;36m[Kn_particles[m[K; i++)
+[0.323s]                                      [01;36m[K^~~~~~~~~~~[m[K
+[0.323s]                                      [32m[Km_n_particles[m[K
+[0.323s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:154:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kn_particles[m[K’ was not declared in this scope
+[0.323s]                  for (int i = 0; i < [01;31m[Kn_particles[m[K; i++)
+[0.324s]                                      [01;31m[K^~~~~~~~~~~[m[K
+[0.324s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:154:37:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Km_n_particles[m[K’
+[0.324s]                  for (int i = 0; i < [01;36m[Kn_particles[m[K; i++)
+[0.325s]                                      [01;36m[K^~~~~~~~~~~[m[K
+[0.325s]                                      [32m[Km_n_particles[m[K
+[0.328s] In file included from [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:8:0[m[K:
+[0.328s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:63:20:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kwidth_[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[0.329s]      PSOPlanner(int [01;35m[Kwidth_[m[K, int height_, int init_pos_x_, int init_pos_y_)
+[0.329s]                     [01;35m[K^~~~~~[m[K
+[0.329s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:63:32:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kheight_[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[0.329s]      PSOPlanner(int width_, int [01;35m[Kheight_[m[K, int init_pos_x_, int init_pos_y_)
+[0.329s]                                 [01;35m[K^~~~~~~[m[K
+[0.329s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:63:45:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kinit_pos_x_[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[0.329s]      PSOPlanner(int width_, int height_, int [01;35m[Kinit_pos_x_[m[K, int init_pos_y_)
+[0.329s]                                              [01;35m[K^~~~~~~~~~~[m[K
+[0.329s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:63:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kinit_pos_y_[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[0.329s]      PSOPlanner(int width_, int height_, int init_pos_x_, int [01;35m[Kinit_pos_y_[m[K)
+[0.329s]                                                               [01;35m[K^~~~~~~~~~~[m[K
+[1.061s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.062s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:289:23:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[1.062s]      for (int i = 0; [01;35m[Ki < pso_result_path_points.size() - 1[m[K; i++)
+[1.062s]                      [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.062s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:141:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktarget_x[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[1.062s]      int [01;35m[Ktarget_x[m[K = waypoints[waypoints.size() - 5].first;
+[1.062s]          [01;35m[K^~~~~~~~[m[K
+[1.062s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:142:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktarget_y[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[1.062s]      int [01;35m[Ktarget_y[m[K = waypoints[waypoints.size() - 5].second;
+[1.062s]          [01;35m[K^~~~~~~~[m[K
+[3.181s] make[2]: *** [CMakeFiles/pso_planner_pkg.dir/src/main.cpp.o] Error 1
+[3.181s] CMakeFiles/pso_planner_pkg.dir/build.make:62: recipe for target 'CMakeFiles/pso_planner_pkg.dir/src/main.cpp.o' failed
+[3.181s] make[1]: *** [CMakeFiles/pso_planner_pkg.dir/all] Error 2
+[3.182s] CMakeFiles/Makefile2:131: recipe for target 'CMakeFiles/pso_planner_pkg.dir/all' failed
+[3.182s] Makefile:140: recipe for target 'all' failed
+[3.182s] make: *** [all] Error 2
+[3.183s] Invoked command in '/home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake --build /home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg -- -j16 -l16

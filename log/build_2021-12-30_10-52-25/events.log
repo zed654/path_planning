@@ -1,0 +1,206 @@
+[0.000000] (-) TimerEvent: {}
+[0.000230] (-) JobUnselected: {'identifier': 'a_star_algorithm_pkg'}
+[0.000300] (-) JobUnselected: {'identifier': 'genetic_algorithm_pkg'}
+[0.000320] (-) JobUnselected: {'identifier': 'grid_algorithm_pkg'}
+[0.001018] (-) JobUnselected: {'identifier': 'hybrid_a_star_algorithm_pkg'}
+[0.001046] (pso_planner_pkg) JobQueued: {'identifier': 'pso_planner_pkg', 'dependencies': OrderedDict()}
+[0.001076] (pso_planner_pkg) JobStarted: {'identifier': 'pso_planner_pkg'}
+[0.013677] (pso_planner_pkg) JobProgress: {'identifier': 'pso_planner_pkg', 'progress': 'cmake'}
+[0.014272] (pso_planner_pkg) JobProgress: {'identifier': 'pso_planner_pkg', 'progress': 'build'}
+[0.014921] (pso_planner_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg', '--', '-j16', '-l16'], 'cwd': '/home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'neubility'), ('LC_TIME', 'ko_KR.UTF-8'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1317'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/neubility/Qt5.14.2/Tools/QtCreator/lib:/usr/local/cuda-11.4/lib64:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib'), ('SHLVL', '1'), ('OLDPWD', '/home/neubility/path_planning_ws/path_planning/img'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/neubility'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/etc/xdg/autostart/org.gnome.SettingsDaemon.MediaKeys.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '1568'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator20x1a6021154d881c'), ('COLCON_PREFIX_PATH', '/home/neubility/path_planning_ws/path_planning/install:/home/neubility/path_planning_ws/path_planning/src/install'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'eloquent'), ('LOGNAME', 'neubility'), ('GTK_IM_MODULE', 'ibus'), ('DESKTOP_AUTOSTART_ID', '10d928c8cb783c78ea164079119029232000000012400007'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USERNAME', 'neubility'), ('XDG_SESSION_ID', '1'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '1'), ('PATH', '/home/neubility/Qt5.14.2/Tools/QtCreator/bin:/usr/local/cuda-11.4/bin:/opt/ros/eloquent/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/neubility:@/tmp/.ICE-unix/1240,unix/neubility:/tmp/.ICE-unix/1240'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('AMENT_PREFIX_PATH', '/home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg:/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg:/home/neubility/path_planning_ws/path_planning/src/install/hybrid_a_star_algorithm_pkg:/opt/ros/eloquent'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '212'), ('TERMINATOR_UUID', 'urn:uuid:744be55c-66f3-475d-8f34-706d4635049f'), ('LC_NAME', 'ko_KR.UTF-8'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('XDG_VTNR', '1'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/opt/ros/eloquent/lib/python3.6/site-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg:/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg:/home/neubility/path_planning_ws/path_planning/src/install/hybrid_a_star_algorithm_pkg:/opt/ros/eloquent')]), 'shell': False}
+[0.056213] (pso_planner_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pso_planner_pkg\x1b[0m\n'}
+[0.067962] (pso_planner_pkg) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/pso_planner_pkg.dir/src/main.cpp.o\x1b[0m\n'}
+[0.098915] (-) TimerEvent: {}
+[0.199261] (-) TimerEvent: {}
+[0.299617] (-) TimerEvent: {}
+[0.399876] (-) TimerEvent: {}
+[0.405768] (pso_planner_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:8:0\x1b[m\x1b[K:\n'}
+[0.406049] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KPSOPlanner::PSOPlanner()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.406182] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:107:15:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[0.406244] (pso_planner_pkg) StderrLine: {'line': b'         \x1b[01;35m\x1b[Kthis->m_personal_best_array_index\x1b[m\x1b[K;\n'}
+[0.406297] (pso_planner_pkg) StderrLine: {'line': b'         \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.406349] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:108:15:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[0.406401] (pso_planner_pkg) StderrLine: {'line': b'         \x1b[01;35m\x1b[Kthis->m_global_best_array_index\x1b[m\x1b[K;\n'}
+[0.406458] (pso_planner_pkg) StderrLine: {'line': b'         \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.406515] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:109:15:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[0.406751] (pso_planner_pkg) StderrLine: {'line': b'         \x1b[01;35m\x1b[Kthis->m_swarm\x1b[m\x1b[K;\n'}
+[0.406804] (pso_planner_pkg) StderrLine: {'line': b'         \x1b[01;35m\x1b[K~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[0.413449] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PSOPlanner::run()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.413610] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:172:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison between signed and unsigned integer expressions [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[0.413670] (pso_planner_pkg) StderrLine: {'line': b'         for (int i = 0; \x1b[01;35m\x1b[Ki < this->m_swarm[this->m_global_best_array_index.first].size()\x1b[m\x1b[K; i++)\n'}
+[0.413725] (pso_planner_pkg) StderrLine: {'line': b'                         \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.415500] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:180:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison between signed and unsigned integer expressions [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[0.415637] (pso_planner_pkg) StderrLine: {'line': b'         for (int i = 0; \x1b[01;35m\x1b[Ki < this->m_swarm.size()\x1b[m\x1b[K; i++)\n'}
+[0.415693] (pso_planner_pkg) StderrLine: {'line': b'                         \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.415749] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:183:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison between signed and unsigned integer expressions [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[0.415799] (pso_planner_pkg) StderrLine: {'line': b'             for (int j = 0; \x1b[01;35m\x1b[Kj < this->m_swarm[i].size()\x1b[m\x1b[K; j++)\n'}
+[0.415849] (pso_planner_pkg) StderrLine: {'line': b'                             \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.419180] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PSOPlanner::init_first_node()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.419378] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:207:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison between signed and unsigned integer expressions [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[0.419680] (pso_planner_pkg) StderrLine: {'line': b'         for (int i = 0; \x1b[01;35m\x1b[Ki < this->m_swarm.size()\x1b[m\x1b[K; i++)\n'}
+[0.419765] (pso_planner_pkg) StderrLine: {'line': b'                         \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.419816] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:209:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison between signed and unsigned integer expressions [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[0.419869] (pso_planner_pkg) StderrLine: {'line': b'             for (int j = 0; \x1b[01;35m\x1b[Kj < this->m_swarm[i].size()\x1b[m\x1b[K; j++)\n'}
+[0.419930] (pso_planner_pkg) StderrLine: {'line': b'                             \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.419984] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:211:35:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison between signed and unsigned integer expressions [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[0.420127] (pso_planner_pkg) StderrLine: {'line': b'                 for (int k = 0; \x1b[01;35m\x1b[Kk < this->m_swarm[i][j].particles.size()\x1b[m\x1b[K; k++)\n'}
+[0.420419] (pso_planner_pkg) StderrLine: {'line': b'                                 \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.420557] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PSOPlanner::update_new_node_fitness_value()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.420698] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:238:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison between signed and unsigned integer expressions [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[0.420862] (pso_planner_pkg) StderrLine: {'line': b'         for (int i = 0; \x1b[01;35m\x1b[Ki < this->m_swarm.size()\x1b[m\x1b[K; i++)\n'}
+[0.420915] (pso_planner_pkg) StderrLine: {'line': b'                         \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.420964] (pso_planner_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:8:0\x1b[m\x1b[K:\n'}
+[0.421013] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PSOPlanner::renew_personal_best_position()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.421065] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:291:15:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[0.421116] (pso_planner_pkg) StderrLine: {'line': b'         \x1b[01;35m\x1b[Kthis->m_personal_best_array_index\x1b[m\x1b[K; // std::vector<int>\n'}
+[0.421166] (pso_planner_pkg) StderrLine: {'line': b'         \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.421215] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:292:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison between signed and unsigned integer expressions [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[0.421264] (pso_planner_pkg) StderrLine: {'line': b'         for (int i = 0; \x1b[01;35m\x1b[Ki < this->m_swarm.size()\x1b[m\x1b[K; i++)\n'}
+[0.421313] (pso_planner_pkg) StderrLine: {'line': b'                         \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.421360] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:295:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison between signed and unsigned integer expressions [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[0.421409] (pso_planner_pkg) StderrLine: {'line': b'             for (int j = 0; \x1b[01;35m\x1b[Kj < this->m_swarm[i].size()\x1b[m\x1b[K; j++)\n'}
+[0.421458] (pso_planner_pkg) StderrLine: {'line': b'                             \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.421506] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PSOPlanner::renew_global_best_position()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.421559] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:318:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison between signed and unsigned integer expressions [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[0.421608] (pso_planner_pkg) StderrLine: {'line': b'         for (int i = 0; \x1b[01;35m\x1b[Ki < this->m_swarm.size()\x1b[m\x1b[K; i++)\n'}
+[0.421656] (pso_planner_pkg) StderrLine: {'line': b'                         \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.421702] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:320:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison between signed and unsigned integer expressions [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[0.421749] (pso_planner_pkg) StderrLine: {'line': b'             for (int j = 0; \x1b[01;35m\x1b[Kj < this->m_swarm[i].size()\x1b[m\x1b[K; j++)\n'}
+[0.421796] (pso_planner_pkg) StderrLine: {'line': b'                             \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.422835] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PSOPlanner::update_new_swarm()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.423072] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:360:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison between signed and unsigned integer expressions [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[0.423141] (pso_planner_pkg) StderrLine: {'line': b'         for (int i = 0; \x1b[01;35m\x1b[Ki < this->m_swarm.size()\x1b[m\x1b[K; i++)\n'}
+[0.423193] (pso_planner_pkg) StderrLine: {'line': b'                         \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.423243] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:365:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison between signed and unsigned integer expressions [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[0.423293] (pso_planner_pkg) StderrLine: {'line': b'             for (int k = 0; \x1b[01;35m\x1b[Kk < this->m_swarm[i][swarm_depth_end_index].particles.size()\x1b[m\x1b[K; k++)\n'}
+[0.423343] (pso_planner_pkg) StderrLine: {'line': b'                             \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.425638] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PSOPlanner::origin_func()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.425925] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:459:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison between signed and unsigned integer expressions [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[0.426031] (pso_planner_pkg) StderrLine: {'line': b'         for (int i = 0; \x1b[01;35m\x1b[Ki < x_swarm.size()\x1b[m\x1b[K; i++)\n'}
+[0.426091] (pso_planner_pkg) StderrLine: {'line': b'                         \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.426141] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:460:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison between signed and unsigned integer expressions [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[0.426195] (pso_planner_pkg) StderrLine: {'line': b'             for (int j = 0; \x1b[01;35m\x1b[Kj < x_swarm[i].size()\x1b[m\x1b[K; j++)\n'}
+[0.426245] (pso_planner_pkg) StderrLine: {'line': b'                             \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.426295] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:467:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison between signed and unsigned integer expressions [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[0.426344] (pso_planner_pkg) StderrLine: {'line': b'         for (int i = 0; \x1b[01;35m\x1b[Ki < y_swarm.size()\x1b[m\x1b[K; i++)\n'}
+[0.426393] (pso_planner_pkg) StderrLine: {'line': b'                         \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.426441] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:468:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison between signed and unsigned integer expressions [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[0.426489] (pso_planner_pkg) StderrLine: {'line': b'             for (int j = 0; \x1b[01;35m\x1b[Kj < y_swarm[i].size()\x1b[m\x1b[K; j++)\n'}
+[0.426612] (pso_planner_pkg) StderrLine: {'line': b'                             \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.427037] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:454:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kmin_g_x\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K-Wunused-but-set-variable\x1b[m\x1b[K]\n'}
+[0.427144] (pso_planner_pkg) StderrLine: {'line': b'         double \x1b[01;35m\x1b[Kmin_g_x\x1b[m\x1b[K = 0;\n'}
+[0.427195] (pso_planner_pkg) StderrLine: {'line': b'                \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[0.427244] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:455:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kmin_g_y\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K-Wunused-but-set-variable\x1b[m\x1b[K]\n'}
+[0.427293] (pso_planner_pkg) StderrLine: {'line': b'         double \x1b[01;35m\x1b[Kmin_g_y\x1b[m\x1b[K = 0;\n'}
+[0.427341] (pso_planner_pkg) StderrLine: {'line': b'                \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[0.499965] (-) TimerEvent: {}
+[0.600221] (-) TimerEvent: {}
+[0.700657] (-) TimerEvent: {}
+[0.800981] (-) TimerEvent: {}
+[0.901298] (-) TimerEvent: {}
+[1.001541] (-) TimerEvent: {}
+[1.101793] (-) TimerEvent: {}
+[1.197835] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.198262] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:292:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison between signed and unsigned integer expressions [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[1.198397] (pso_planner_pkg) StderrLine: {'line': b'     for (int i = 0; \x1b[01;35m\x1b[Ki < pso_result_path_points.size() - 1\x1b[m\x1b[K; i++)\n'}
+[1.198459] (pso_planner_pkg) StderrLine: {'line': b'                     \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.198552] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:297:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison between signed and unsigned integer expressions [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[1.198654] (pso_planner_pkg) StderrLine: {'line': b'     for (int i = 0; \x1b[01;35m\x1b[Ki < pso_total_result_path_points.size()\x1b[m\x1b[K; i++)\n'}
+[1.198718] (pso_planner_pkg) StderrLine: {'line': b'                     \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.198770] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:300:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison between signed and unsigned integer expressions [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[1.198825] (pso_planner_pkg) StderrLine: {'line': b'         for (int j = 0; \x1b[01;35m\x1b[Kj < pso_total_result_path_points[i].size()\x1b[m\x1b[K; j++)\n'}
+[1.198878] (pso_planner_pkg) StderrLine: {'line': b'                         \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.198928] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:83:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Koccupancy_grid_map_width\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[1.198985] (pso_planner_pkg) StderrLine: {'line': b'     int \x1b[01;35m\x1b[Koccupancy_grid_map_width\x1b[m\x1b[K = 959;\n'}
+[1.199036] (pso_planner_pkg) StderrLine: {'line': b'         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.199085] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:84:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Koccupancy_grid_map_height\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[1.199134] (pso_planner_pkg) StderrLine: {'line': b'     int \x1b[01;35m\x1b[Koccupancy_grid_map_height\x1b[m\x1b[K = 538;\n'}
+[1.199183] (pso_planner_pkg) StderrLine: {'line': b'         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.199233] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:139:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kinit_pos_x\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[1.199288] (pso_planner_pkg) StderrLine: {'line': b'     int \x1b[01;35m\x1b[Kinit_pos_x\x1b[m\x1b[K = waypoints[0].first;\n'}
+[1.199337] (pso_planner_pkg) StderrLine: {'line': b'         \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.199385] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:140:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kinit_pos_y\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[1.199433] (pso_planner_pkg) StderrLine: {'line': b'     int \x1b[01;35m\x1b[Kinit_pos_y\x1b[m\x1b[K = waypoints[0].second;\n'}
+[1.199481] (pso_planner_pkg) StderrLine: {'line': b'         \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.199528] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:141:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ktarget_x\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[1.199577] (pso_planner_pkg) StderrLine: {'line': b'     int \x1b[01;35m\x1b[Ktarget_x\x1b[m\x1b[K = waypoints[waypoints.size() - 5].first;\n'}
+[1.199626] (pso_planner_pkg) StderrLine: {'line': b'         \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.199674] (pso_planner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:142:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ktarget_y\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[1.199726] (pso_planner_pkg) StderrLine: {'line': b'     int \x1b[01;35m\x1b[Ktarget_y\x1b[m\x1b[K = waypoints[waypoints.size() - 5].second;\n'}
+[1.199774] (pso_planner_pkg) StderrLine: {'line': b'         \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.201848] (-) TimerEvent: {}
+[1.302057] (-) TimerEvent: {}
+[1.402335] (-) TimerEvent: {}
+[1.502660] (-) TimerEvent: {}
+[1.602944] (-) TimerEvent: {}
+[1.703253] (-) TimerEvent: {}
+[1.803558] (-) TimerEvent: {}
+[1.903819] (-) TimerEvent: {}
+[2.004048] (-) TimerEvent: {}
+[2.104281] (-) TimerEvent: {}
+[2.204542] (-) TimerEvent: {}
+[2.304841] (-) TimerEvent: {}
+[2.405070] (-) TimerEvent: {}
+[2.505335] (-) TimerEvent: {}
+[2.605584] (-) TimerEvent: {}
+[2.705829] (-) TimerEvent: {}
+[2.806072] (-) TimerEvent: {}
+[2.906308] (-) TimerEvent: {}
+[3.006559] (-) TimerEvent: {}
+[3.106839] (-) TimerEvent: {}
+[3.207146] (-) TimerEvent: {}
+[3.307373] (-) TimerEvent: {}
+[3.407640] (-) TimerEvent: {}
+[3.507964] (-) TimerEvent: {}
+[3.608223] (-) TimerEvent: {}
+[3.708500] (-) TimerEvent: {}
+[3.808816] (-) TimerEvent: {}
+[3.909062] (-) TimerEvent: {}
+[4.009332] (-) TimerEvent: {}
+[4.109605] (-) TimerEvent: {}
+[4.209867] (-) TimerEvent: {}
+[4.310122] (-) TimerEvent: {}
+[4.410390] (-) TimerEvent: {}
+[4.510694] (-) TimerEvent: {}
+[4.611023] (-) TimerEvent: {}
+[4.711328] (-) TimerEvent: {}
+[4.811581] (-) TimerEvent: {}
+[4.911834] (-) TimerEvent: {}
+[5.012120] (-) TimerEvent: {}
+[5.112375] (-) TimerEvent: {}
+[5.190566] (pso_planner_pkg) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable pso_planner_pkg\x1b[0m\n'}
+[5.212511] (-) TimerEvent: {}
+[5.312932] (-) TimerEvent: {}
+[5.413184] (-) TimerEvent: {}
+[5.513401] (-) TimerEvent: {}
+[5.613631] (-) TimerEvent: {}
+[5.637339] (pso_planner_pkg) StdoutLine: {'line': b'[100%] Built target pso_planner_pkg\n'}
+[5.653730] (pso_planner_pkg) CommandEnded: {'returncode': 0}
+[5.701627] (pso_planner_pkg) JobProgress: {'identifier': 'pso_planner_pkg', 'progress': 'install'}
+[5.713897] (-) TimerEvent: {}
+[5.720034] (pso_planner_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg', '--target', 'install', '--', '-j16', '-l16'], 'cwd': '/home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'neubility'), ('LC_TIME', 'ko_KR.UTF-8'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1317'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/neubility/Qt5.14.2/Tools/QtCreator/lib:/usr/local/cuda-11.4/lib64:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib'), ('SHLVL', '1'), ('OLDPWD', '/home/neubility/path_planning_ws/path_planning/img'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/neubility'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/etc/xdg/autostart/org.gnome.SettingsDaemon.MediaKeys.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '1568'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator20x1a6021154d881c'), ('COLCON_PREFIX_PATH', '/home/neubility/path_planning_ws/path_planning/install:/home/neubility/path_planning_ws/path_planning/src/install'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'eloquent'), ('LOGNAME', 'neubility'), ('GTK_IM_MODULE', 'ibus'), ('DESKTOP_AUTOSTART_ID', '10d928c8cb783c78ea164079119029232000000012400007'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USERNAME', 'neubility'), ('XDG_SESSION_ID', '1'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '1'), ('PATH', '/home/neubility/Qt5.14.2/Tools/QtCreator/bin:/usr/local/cuda-11.4/bin:/opt/ros/eloquent/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/neubility:@/tmp/.ICE-unix/1240,unix/neubility:/tmp/.ICE-unix/1240'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('AMENT_PREFIX_PATH', '/home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg:/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg:/home/neubility/path_planning_ws/path_planning/src/install/hybrid_a_star_algorithm_pkg:/opt/ros/eloquent'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '212'), ('TERMINATOR_UUID', 'urn:uuid:744be55c-66f3-475d-8f34-706d4635049f'), ('LC_NAME', 'ko_KR.UTF-8'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('XDG_VTNR', '1'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/opt/ros/eloquent/lib/python3.6/site-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg:/home/neubility/path_planning_ws/path_planning/install/hybrid_a_star_algorithm_pkg:/home/neubility/path_planning_ws/path_planning/src/install/hybrid_a_star_algorithm_pkg:/opt/ros/eloquent')]), 'shell': False}
+[5.805402] (pso_planner_pkg) StdoutLine: {'line': b'[100%] Built target pso_planner_pkg\n'}
+[5.814028] (-) TimerEvent: {}
+[5.826996] (pso_planner_pkg) StdoutLine: {'line': b'\x1b[36mInstall the project...\x1b[0m\n'}
+[5.838093] (pso_planner_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.838344] (pso_planner_pkg) StdoutLine: {'line': b'-- Installing: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/lib/pso_planner_pkg/pso_planner_pkg\n'}
+[5.840083] (pso_planner_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/lib/pso_planner_pkg/pso_planner_pkg" to ""\n'}
+[5.840602] (pso_planner_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/launch\n'}
+[5.841054] (pso_planner_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/ament_index/resource_index/package_run_dependencies/pso_planner_pkg\n'}
+[5.841312] (pso_planner_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/ament_index/resource_index/parent_prefix_path/pso_planner_pkg\n'}
+[5.841648] (pso_planner_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/environment/ament_prefix_path.sh\n'}
+[5.841828] (pso_planner_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/environment/ament_prefix_path.dsv\n'}
+[5.841899] (pso_planner_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/environment/path.sh\n'}
+[5.841962] (pso_planner_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/environment/path.dsv\n'}
+[5.842024] (pso_planner_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/local_setup.bash\n'}
+[5.842085] (pso_planner_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/local_setup.sh\n'}
+[5.842147] (pso_planner_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/local_setup.zsh\n'}
+[5.842207] (pso_planner_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/local_setup.dsv\n'}
+[5.842271] (pso_planner_pkg) StdoutLine: {'line': b'-- Installing: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/package.dsv\n'}
+[5.842337] (pso_planner_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/ament_index/resource_index/packages/pso_planner_pkg\n'}
+[5.842401] (pso_planner_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/cmake/pso_planner_pkgConfig.cmake\n'}
+[5.842446] (pso_planner_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/cmake/pso_planner_pkgConfig-version.cmake\n'}
+[5.842492] (pso_planner_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/package.xml\n'}
+[5.844460] (pso_planner_pkg) CommandEnded: {'returncode': 0}
+[5.909634] (pso_planner_pkg) JobEnded: {'identifier': 'pso_planner_pkg', 'rc': 0}
+[5.910863] (-) EventReactorShutdown: {}

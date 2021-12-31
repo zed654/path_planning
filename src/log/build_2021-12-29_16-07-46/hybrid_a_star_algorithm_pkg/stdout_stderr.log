@@ -1,0 +1,25 @@
+-- Found ament_cmake: 0.8.3 (/opt/ros/eloquent/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 0.8.5 (/opt/ros/eloquent/share/rclcpp/cmake)
+-- Found rosidl_adapter: 0.8.3 (/opt/ros/eloquent/share/rosidl_adapter/cmake)
+-- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found std_msgs: 0.8.1 (/opt/ros/eloquent/share/std_msgs/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/neubility/path_planning_ws/path_planning/src/build/hybrid_a_star_algorithm_pkg
+[35m[1mScanning dependencies of target hybrid_a_star_algorithm_pkg[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/hybrid_a_star_algorithm_pkg.dir/src/main.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/hybrid_a_star_algorithm_pkg.dir/src/monitor.cpp.o[0m
+In file included from [01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/src/main.cpp:12:0[m[K:
+[01m[K/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/include/hybrid_astar.hpp:9:10:[m[K [01;31m[Kfatal error: [m[KEigen-3.3/Eigen/Core: No such file or directory
+ #include [01;31m[K<Eigen-3.3/Eigen/Core>[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+CMakeFiles/hybrid_a_star_algorithm_pkg.dir/build.make:62: recipe for target 'CMakeFiles/hybrid_a_star_algorithm_pkg.dir/src/main.cpp.o' failed
+make[2]: *** [CMakeFiles/hybrid_a_star_algorithm_pkg.dir/src/main.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+CMakeFiles/Makefile2:131: recipe for target 'CMakeFiles/hybrid_a_star_algorithm_pkg.dir/all' failed
+make[1]: *** [CMakeFiles/hybrid_a_star_algorithm_pkg.dir/all] Error 2
+make: *** [all] Error 2
+Makefile:140: recipe for target 'all' failed

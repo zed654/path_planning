@@ -1,0 +1,61 @@
+-- The C compiler identification is GNU 7.5.0
+-- The CXX compiler identification is GNU 7.5.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.8.3 (/opt/ros/eloquent/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 0.8.5 (/opt/ros/eloquent/share/rclcpp/cmake)
+-- Found rosidl_adapter: 0.8.3 (/opt/ros/eloquent/share/rosidl_adapter/cmake)
+-- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found std_msgs: 0.8.1 (/opt/ros/eloquent/share/std_msgs/cmake)
+-- Found OpenCV: /usr (found version "3.2.0") 
+Error parsing '/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/package.xml':
+Traceback (most recent call last):
+  File "/opt/ros/eloquent/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 143, in <module>
+    main()
+  File "/opt/ros/eloquent/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 52, in main
+    raise e
+  File "/opt/ros/eloquent/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+    args.package_xml.read(), filename=args.package_xml.name)
+  File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 772, in parse_package_string
+    raise InvalidPackage('Error(s):%s' % (''.join(['\n- %s' % e for e in errors])), filename)
+catkin_pkg.package.InvalidPackage: Error(s) in package '/home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/package.xml':
+Error(s):
+- The manifest of package "hybrid_a_star_algorithm_pkg" (with format version 1) must not contain the following tags: exec_depend
+- Either update to a newer format or replace <exec_depend> tags with <run_depend> tags.
+CMake Error at /opt/ros/eloquent/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:94 (message):
+  execute_process(/usr/bin/python3
+  /opt/ros/eloquent/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+  /home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg/package.xml
+  /home/neubility/path_planning_ws/path_planning/src/build/hybrid_a_star_algorithm_pkg/ament_cmake_core/package.cmake)
+  returned error code 1
+Call Stack (most recent call first):
+  /opt/ros/eloquent/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+  /opt/ros/eloquent/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)
+  CMakeLists.txt:37 (ament_package)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/neubility/path_planning_ws/path_planning/src/build/hybrid_a_star_algorithm_pkg/CMakeFiles/CMakeOutput.log".
+See also "/home/neubility/path_planning_ws/path_planning/src/build/hybrid_a_star_algorithm_pkg/CMakeFiles/CMakeError.log".

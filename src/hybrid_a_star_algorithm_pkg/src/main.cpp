@@ -35,20 +35,21 @@ Eigen::VectorXd PolyFit(Eigen::VectorXd xvals, Eigen::VectorXd yvals, int order)
 
 int main(int argc, char **argv)
 {
-    if(argc!=2)
-    {
-        std::cout << "The command should be comply with this format." << std::endl;
-        std::cout << "Format : rosrun [pkg] [img_num]" << std::endl;
-        exit(1);
-    }
+    // if(argc!=2)
+    // {
+    //     std::cout << "The command should be comply with this format." << std::endl;
+    //     std::cout << "Format : rosrun [pkg] [img_num]" << std::endl;
+    //     exit(1);
+    // }
     std::string img_count = argv[1];
 
     cv::Mat obstacle_img;
     // Set Size of Obstacle Image
     int obstacle_img_width = 960;
     int obstacle_img_height = 540;
-    obstacle_img = cv::imread("img/" + img_count + ".jpeg");
-    if(!obstacle_img.data)
+    // obstacle_img = cv::imread("/home/neubility/path_planning_ws/path_planning/img/" + img_count + ".jpeg");
+    obstacle_img = cv::imread("/home/neubility/path_planning_ws/path_planning/img/3.jpeg");
+    if (!obstacle_img.data)
     {
         std::cout << "Can't find the image file" << std::endl;
         exit(1);
@@ -63,57 +64,50 @@ int main(int argc, char **argv)
     cv::Mat result;
     result = obstacle_img.clone();
 
-
-
-
     std::vector<std::pair<double, double>> waypoints;
     double prev_x_tmp = 0;
-    for(int i = 0; i < obstacle_img.cols; i++)
-        for(int j = 0; j < obstacle_img.rows; j++)
+    for (int i = 0; i < obstacle_img.cols; i++)
+        for (int j = 0; j < obstacle_img.rows; j++)
         {
             double r_tmp = obstacle_img.at<cv::Vec3b>(j, i)[2];
             double g_tmp = obstacle_img.at<cv::Vec3b>(j, i)[1];
             double b_tmp = obstacle_img.at<cv::Vec3b>(j, i)[0];
-            if((r_tmp + g_tmp + b_tmp) <= 20)
+            if ((r_tmp + g_tmp + b_tmp) <= 20)
             {
-                if(i >= 163)
+                if (i >= 163)
                 {
-                    if(i - prev_x_tmp > 5)
+                    if (i - prev_x_tmp > 5)
                     {
                         // std::cout << obstacle_img.at<cv::Vec3b>(j, i) << "\t\t" << i << "\t\t" << j << std::endl;
-                        waypoints.push_back(std::make_pair(i+1000, j+1000));
+                        waypoints.push_back(std::make_pair(i + 1000, j + 1000));
                         // cv::circle(result, cv::Point(i, j), 0, cv::Scalar(0,0,255), 5);
                     }
                     prev_x_tmp = i;
-                    
-
                 }
             }
         }
 
     std::vector<std::pair<double, double>> obstacles_tmp;
-    for(int i = 0; i < obstacle_img.cols; i++)
-        for(int j = 0; j < obstacle_img.rows; j++)
+    for (int i = 0; i < obstacle_img.cols; i++)
+        for (int j = 0; j < obstacle_img.rows; j++)
         {
             double r_tmp = obstacle_img.at<cv::Vec3b>(j, i)[2];
             double g_tmp = obstacle_img.at<cv::Vec3b>(j, i)[1];
             double b_tmp = obstacle_img.at<cv::Vec3b>(j, i)[0];
             // if((r_tmp + g_tmp + b_tmp) < 700 & (r_tmp + g_tmp + b_tmp) > 500)
             // if(((r_tmp + g_tmp + b_tmp) >= 400) & ((r_tmp + g_tmp + b_tmp) < 700))
-            if((i+j)%23 == 0)
-                if( b_tmp > 215 & (r_tmp + g_tmp + b_tmp < 590))
+            if ((i + j) % 23 == 0)
+                if (b_tmp > 215 & (r_tmp + g_tmp + b_tmp < 590))
                 {
-                    obstacles_tmp.push_back(std::make_pair(i+1000, j+1000));
+                    obstacles_tmp.push_back(std::make_pair(i + 1000, j + 1000));
                     // std::cout << obstacle_img.at<cv::Vec3b>(j, i) << "\t\t" << i << "\t\t" << j << std::endl;
                     // cv::circle(result, cv::Point(i, j), 0, cv::Scalar(0,255,0), 1);
                 }
         }
 
-
-
     std::vector<double> WPs_x_tmp2;
     std::vector<double> WPs_y_tmp2;
-    
+
     for (int i = 0; i < waypoints.size(); i++)
     {
         WPs_x_tmp2.push_back(waypoints[i].first);
@@ -128,10 +122,10 @@ int main(int argc, char **argv)
 
     int init_x_tmp = waypoints[0].first;
     int init_y_tmp = waypoints[0].second;
-//    double target_x_tmp2 = waypoints[waypoints.size()-1].first;
-//    double target_y_tmp2 = waypoints[waypoints.size()-1].second;
-    double target_x_tmp2 = waypoints[waypoints.size()-20].first;
-    double target_y_tmp2 = waypoints[waypoints.size()-20].second;
+    //    double target_x_tmp2 = waypoints[waypoints.size()-1].first;
+    //    double target_y_tmp2 = waypoints[waypoints.size()-1].second;
+    double target_x_tmp2 = waypoints[waypoints.size() - 20].first;
+    double target_y_tmp2 = waypoints[waypoints.size() - 20].second;
     TimeChecker tc[10];
     // HybridAstar h_astar2(1163, 1255, target_x_tmp2 + 1000, target_y_tmp2 + 1000);
     HybridAstar h_astar2(init_x_tmp, init_y_tmp, target_x_tmp2, target_y_tmp2);
@@ -144,12 +138,13 @@ int main(int argc, char **argv)
     {
         loop_time_tmp += tc[9].LoopTimeCalc();
 
-//        std::cout << "Loop Time : " << tc[1].LoopTimeCalc() << "\t\t" << nCount_tmp++ << std::endl;
+        //        std::cout << "Loop Time : " << tc[1].LoopTimeCalc() << "\t\t" << nCount_tmp++ << std::endl;
         // usleep(10);
     }
     std::cout << "nObstacle : " << obstacles_tmp.size() << std::endl;
-    std::cout << "Total Loop Time : " << tc[0].ArrivalPointTime() << " ms" << "\t\t" << loop_time_tmp <<  std::endl;
-    
+    std::cout << "Total Loop Time : " << tc[0].ArrivalPointTime() << " ms"
+              << "\t\t" << loop_time_tmp << std::endl;
+
     double sum_of_error = 0;
     double sum_of_rms_square = 0;
     std::vector<std::pair<double, double>> local_xy_tmp;
@@ -157,40 +152,42 @@ int main(int argc, char **argv)
     double min_error = 999999;
     for (int i = 0; i < h_astar2.local_x.size(); i++)
     {
-//        std::cout << (h_astar2.local_x[i]-1000)/10 << "\t\t";
-            // local_xy_tmp.push_back(std::make_pair((h_astar2.local_x[i] - 1000) / 10., (h_astar2.local_y[i] - 1000) / 10.));       
-            local_xy_tmp.push_back(std::make_pair((h_astar2.local_x[i] - 1000), (h_astar2.local_y[i] - 1000)));       
-            double error        = std::fabs((PolyEval(coeffs_tmp2, h_astar2.local_x[i])-1000)/10 - (h_astar2.local_y[i]-1000)/10);
-            double rms_square   = std::pow((PolyEval(coeffs_tmp2, h_astar2.local_x[i])-1000)/10 - (h_astar2.local_y[i]-1000)/10,2);
-            sum_of_error += error;
-            if(error > max_error) max_error = error;
-            if(std::fabs(error) < min_error) min_error = error;
-            sum_of_rms_square += rms_square;
-//            std::cout << std::fabs((PolyEval(coeffs_tmp2, h_astar2.local_x[i])-1000)/10 - (h_astar2.local_y[i]-1000)/10) << "\t\t";
+        //        std::cout << (h_astar2.local_x[i]-1000)/10 << "\t\t";
+        // local_xy_tmp.push_back(std::make_pair((h_astar2.local_x[i] - 1000) / 10., (h_astar2.local_y[i] - 1000) / 10.));
+        local_xy_tmp.push_back(std::make_pair((h_astar2.local_x[i] - 1000), (h_astar2.local_y[i] - 1000)));
+        double error = std::fabs((PolyEval(coeffs_tmp2, h_astar2.local_x[i]) - 1000) / 10 - (h_astar2.local_y[i] - 1000) / 10);
+        double rms_square = std::pow((PolyEval(coeffs_tmp2, h_astar2.local_x[i]) - 1000) / 10 - (h_astar2.local_y[i] - 1000) / 10, 2);
+        sum_of_error += error;
+        if (error > max_error)
+            max_error = error;
+        if (std::fabs(error) < min_error)
+            min_error = error;
+        sum_of_rms_square += rms_square;
+        //            std::cout << std::fabs((PolyEval(coeffs_tmp2, h_astar2.local_x[i])-1000)/10 - (h_astar2.local_y[i]-1000)/10) << "\t\t";
 
-//            std::cout << (h_astar2.local_x[i]-1000)/10 << "\t\t";
+        //            std::cout << (h_astar2.local_x[i]-1000)/10 << "\t\t";
     }
 
     std::cout << std::endl;
     std::cout << "Max error : " << max_error << std::endl;
     std::cout << "Min error : " << min_error << std::endl;
     std::cout << "Sum of the error : " << sum_of_error << std::endl;
-    std::cout << "Avg of the error : " << sum_of_error/h_astar2.local_x.size() << std::endl;
+    std::cout << "Avg of the error : " << sum_of_error / h_astar2.local_x.size() << std::endl;
     std::cout << "Sum of the RMS square : " << sum_of_rms_square << std::endl;
-    std::cout << "Avg of the RMS square : " << sum_of_rms_square/h_astar2.local_x.size() << std::endl;
-    std::cout << "RMS error : " << std::sqrt(sum_of_rms_square/h_astar2.local_x.size()) << std::endl;
+    std::cout << "Avg of the RMS square : " << sum_of_rms_square / h_astar2.local_x.size() << std::endl;
+    std::cout << "RMS error : " << std::sqrt(sum_of_rms_square / h_astar2.local_x.size()) << std::endl;
     //    std::cout << "PolyEval Test :" << (PolyEval(coeffs_tmp2, 1170)-1000)/10 << "\t\t" << (PolyEval(coeffs_tmp2, 1300)-1000)/10 << "\t\t" << (PolyEval(coeffs_tmp2, 1800)-1000)/10 << std::endl;
 
     std::cout.precision(15);
     std::cout << "coeffs : ";
-    for(int i = 0; i < coeffs_tmp2.size(); i++)
+    for (int i = 0; i < coeffs_tmp2.size(); i++)
         std::cout << coeffs_tmp2[i] << "\t\t";
     std::cout << std::endl;
-    for(int i = 0; i < local_xy_tmp.size()-1; i++)
+    for (int i = 0; i < local_xy_tmp.size() - 1; i++)
     {
         // std::cout << local_xy_tmp[i].first << "\t\t" << local_xy_tmp[i].second << std::endl;
-         cv::circle(result, cv::Point(local_xy_tmp[i].first, local_xy_tmp[i].second), 1, cv::Scalar(0,0,255), 4);
-//        cv::line(result, cv::Point(local_xy_tmp[i].first, local_xy_tmp[i].second), cv::Point(local_xy_tmp[i+1].first, local_xy_tmp[i+1].second), cv::Scalar(0, 0, 255), 1, 8, 0);
+        cv::circle(result, cv::Point(local_xy_tmp[i].first, local_xy_tmp[i].second), 1, cv::Scalar(0, 0, 255), 4);
+        //        cv::line(result, cv::Point(local_xy_tmp[i].first, local_xy_tmp[i].second), cv::Point(local_xy_tmp[i+1].first, local_xy_tmp[i+1].second), cv::Scalar(0, 0, 255), 1, 8, 0);
     }
 
     //FIXME:
@@ -213,9 +210,8 @@ int main(int argc, char **argv)
     cv::imshow("Result of Astar", result);
     cv::imwrite("img/result/result2.jpeg", result);
 
-    while(cv::waitKey(10)!='q')
+    while (cv::waitKey(10) != 'q')
     {
-
     }
 }
 
@@ -248,8 +244,6 @@ Eigen::VectorXd PolyFit(Eigen::VectorXd xvals, Eigen::VectorXd yvals, int order)
 // #include <opencv2/opencv.hpp>
 // #include <opencv2/core.hpp>
 // #include <opencv2/highgui.hpp>
-
-
 
 // int main(int argc, char **argv)
 // {

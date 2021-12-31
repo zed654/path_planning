@@ -1,0 +1,21 @@
+[0.026s] Invoking command in '/home/neubility/path_planning_ws/path_planning/src/build/genetic_algorithm_pkg': /usr/bin/cmake /home/neubility/path_planning_ws/path_planning/src/genetic_algorithm_pkg -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/neubility/path_planning_ws/path_planning/src/install/genetic_algorithm_pkg
+[0.058s] -- Configuring incomplete, errors occurred!
+[0.058s] See also "/home/neubility/path_planning_ws/path_planning/src/build/genetic_algorithm_pkg/CMakeFiles/CMakeOutput.log".
+[0.058s] CMake Error at CMakeLists.txt:8 (find_package):
+[0.059s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.059s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.059s]   CMake did not find one.
+[0.059s] 
+[0.061s]   Could not find a package configuration file provided by "catkin" with any
+[0.061s]   of the following names:
+[0.061s] 
+[0.061s]     catkinConfig.cmake
+[0.061s]     catkin-config.cmake
+[0.061s] 
+[0.062s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.062s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.062s]   provides a separate development package or SDK, be sure it has been
+[0.062s]   installed.
+[0.062s] 
+[0.064s] 
+[0.068s] Invoked command in '/home/neubility/path_planning_ws/path_planning/src/build/genetic_algorithm_pkg' returned '1': /usr/bin/cmake /home/neubility/path_planning_ws/path_planning/src/genetic_algorithm_pkg -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/neubility/path_planning_ws/path_planning/src/install/genetic_algorithm_pkg

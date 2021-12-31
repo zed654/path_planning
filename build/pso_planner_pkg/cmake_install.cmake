@@ -1,8 +1,8 @@
-# Install script for directory: /home/a/path_planning_ws/src/pso_planner_pkg
+# Install script for directory: /home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/a/path_planning_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,95 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/a/path_planning_ws/build/pso_planner_pkg/catkin_generated/installspace/pso_planner_pkg.pc")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pso_planner_pkg/pso_planner_pkg" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pso_planner_pkg/pso_planner_pkg")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pso_planner_pkg/pso_planner_pkg"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pso_planner_pkg" TYPE EXECUTABLE FILES "/home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg/pso_planner_pkg")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pso_planner_pkg/pso_planner_pkg" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pso_planner_pkg/pso_planner_pkg")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pso_planner_pkg/pso_planner_pkg"
+         OLD_RPATH "/opt/ros/eloquent/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pso_planner_pkg/pso_planner_pkg")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pso_planner_pkg" TYPE DIRECTORY FILES "/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/launch")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/pso_planner_pkg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/pso_planner_pkg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pso_planner_pkg/environment" TYPE FILE FILES "/opt/ros/eloquent/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pso_planner_pkg/environment" TYPE FILE FILES "/home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pso_planner_pkg/environment" TYPE FILE FILES "/opt/ros/eloquent/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pso_planner_pkg/environment" TYPE FILE FILES "/home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg/ament_cmake_environment_hooks/path.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pso_planner_pkg" TYPE FILE FILES "/home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg/ament_cmake_environment_hooks/local_setup.bash")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pso_planner_pkg" TYPE FILE FILES "/home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg/ament_cmake_environment_hooks/local_setup.sh")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pso_planner_pkg" TYPE FILE FILES "/home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg/ament_cmake_environment_hooks/local_setup.zsh")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pso_planner_pkg" TYPE FILE FILES "/home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg/ament_cmake_environment_hooks/local_setup.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pso_planner_pkg" TYPE FILE FILES "/home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg/ament_cmake_environment_hooks/package.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg/ament_cmake_index/share/ament_index/resource_index/packages/pso_planner_pkg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pso_planner_pkg/cmake" TYPE FILE FILES
-    "/home/a/path_planning_ws/build/pso_planner_pkg/catkin_generated/installspace/pso_planner_pkgConfig.cmake"
-    "/home/a/path_planning_ws/build/pso_planner_pkg/catkin_generated/installspace/pso_planner_pkgConfig-version.cmake"
+    "/home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg/ament_cmake_core/pso_planner_pkgConfig.cmake"
+    "/home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg/ament_cmake_core/pso_planner_pkgConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pso_planner_pkg" TYPE FILE FILES "/home/a/path_planning_ws/src/pso_planner_pkg/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pso_planner_pkg" TYPE FILE FILES "/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/package.xml")
 endif()
 
+if(CMAKE_INSTALL_COMPONENT)
+  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
+else()
+  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
+endif()
+
+string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
+       "${CMAKE_INSTALL_MANIFEST_FILES}")
+file(WRITE "/home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg/${CMAKE_INSTALL_MANIFEST}"
+     "${CMAKE_INSTALL_MANIFEST_CONTENT}")

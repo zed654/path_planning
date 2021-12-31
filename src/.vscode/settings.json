@@ -1,5 +1,8 @@
 {
     "files.associations": {
+        "*.repos": "yaml",
+        "*.world": "xml",
+        "*.xacro": "xml",
         "cctype": "cpp",
         "clocale": "cpp",
         "cmath": "cpp",
@@ -49,6 +52,22 @@
         "cinttypes": "cpp",
         "utility": "cpp",
         "typeindex": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "alignedvector3": "cpp",
+        "tensorsymmetry": "cpp",
+        "csignal": "cpp",
+        "condition_variable": "cpp",
+        "iterator": "cpp",
+        "map": "cpp",
+        "memory_resource": "cpp",
+        "optional": "cpp",
+        "random": "cpp",
+        "set": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "hash_map": "cpp",
+        "future": "cpp",
+        "mutex": "cpp",
+        "valarray": "cpp"
     }
 }

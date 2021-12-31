@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/a/path_planning_ws/src/hybrid_a_star_algorithm_pkg
-# Build directory: /home/a/path_planning_ws/build/hybrid_a_star_algorithm_pkg
+# Source directory: /home/neubility/path_planning_ws/path_planning/src/hybrid_a_star_algorithm_pkg
+# Build directory: /home/neubility/path_planning_ws/path_planning/build/hybrid_a_star_algorithm_pkg
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

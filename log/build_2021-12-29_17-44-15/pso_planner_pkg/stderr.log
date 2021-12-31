@@ -1,0 +1,52 @@
+In file included from [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:8:0[m[K:
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:[m[K In constructor ‘[01m[KPSOPlanner::PSOPlanner()[m[K’:
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:109:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kshared_ptr[m[K’ is not a member of ‘[01m[Kstd[m[K’
+         std::[01;31m[Kshared_ptr[m[K<Particles> current_particle;
+              [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:109:34:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+         std::shared_ptr<Particles[01;31m[K>[m[K current_particle;
+                                  [01;31m[K^[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:109:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_particle[m[K’ was not declared in this scope
+         std::shared_ptr<Particles> [01;31m[Kcurrent_particle[m[K;
+                                    [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:109:36:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Km_n_particles[m[K’
+         std::shared_ptr<Particles> [01;36m[Kcurrent_particle[m[K;
+                                    [01;36m[K^~~~~~~~~~~~~~~~[m[K
+                                    [32m[Km_n_particles[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:164:27:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+         for (int i = 0; [01;35m[Ki < x_swarm.size()[m[K; i++)
+                         [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:165:31:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+             for (int j = 0; [01;35m[Kj < x_swarm[i].size()[m[K; j++)
+                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:172:27:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+         for (int i = 0; [01;35m[Ki < y_swarm.size()[m[K; i++)
+                         [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:173:31:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+             for (int j = 0; [01;35m[Kj < y_swarm[i].size()[m[K; j++)
+                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:290:23:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+     for (int i = 0; [01;35m[Ki < pso_result_path_points.size() - 1[m[K; i++)
+                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:83:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Koccupancy_grid_map_width[m[K’ [[01;35m[K-Wunused-variable[m[K]
+     int [01;35m[Koccupancy_grid_map_width[m[K = 959;
+         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:84:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Koccupancy_grid_map_height[m[K’ [[01;35m[K-Wunused-variable[m[K]
+     int [01;35m[Koccupancy_grid_map_height[m[K = 538;
+         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:139:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kinit_pos_x[m[K’ [[01;35m[K-Wunused-variable[m[K]
+     int [01;35m[Kinit_pos_x[m[K = waypoints[0].first;
+         [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:140:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kinit_pos_y[m[K’ [[01;35m[K-Wunused-variable[m[K]
+     int [01;35m[Kinit_pos_y[m[K = waypoints[0].second;
+         [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:141:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktarget_x[m[K’ [[01;35m[K-Wunused-variable[m[K]
+     int [01;35m[Ktarget_x[m[K = waypoints[waypoints.size() - 5].first;
+         [01;35m[K^~~~~~~~[m[K
+[01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:142:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktarget_y[m[K’ [[01;35m[K-Wunused-variable[m[K]
+     int [01;35m[Ktarget_y[m[K = waypoints[waypoints.size() - 5].second;
+         [01;35m[K^~~~~~~~[m[K
+make[2]: *** [CMakeFiles/pso_planner_pkg.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/pso_planner_pkg.dir/all] Error 2
+make: *** [all] Error 2
