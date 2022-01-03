@@ -105,7 +105,7 @@ public:
         rand_val += st_val;
         return rand_val;
     }
-    PSOPlanner()
+    PSOPlanner(const std::pair<double, double> &init_xy, const std::pair<double, double> &target_xy, const std::pair<double, double> &obsts_xy)
     {
         /*
             Swarm 중에서 Personal Best 뽑음
@@ -123,7 +123,7 @@ public:
         // this->m_fitness_w1 = 10;
         // this->m_fitness_w2 = 1; //1;
         this->m_w = 1;            //0.25;
-        this->m_c1 = 2;           //2;
+        this->m_c1 = 1;           //2;
         this->m_c2 = 2;           //2;
         this->m_init_flag = true; // Rand 함수 때문
         this->m_fitness_w1 = 20000;
@@ -136,12 +136,11 @@ public:
         this->m_swarm_size = 10;
 
         /* 반복 횟수 초기화 */
-        this->m_repeat_count = 50;
+        this->m_repeat_count = 100;
 
-        /* FIXME: 아래 선언은 지우시오. */
-        this->m_pso_target_xy = std::make_pair(100, 50);
-        this->m_closed_obsts_xy = std::make_pair(50, 50);
-        this->m_init_xy = std::make_pair(500, 50);
+        this->m_pso_target_xy = target_xy;
+        this->m_closed_obsts_xy = obsts_xy;
+        this->m_init_xy = init_xy;
 
         /* m_swarm 초기화 */
         init_first_node();
@@ -220,6 +219,7 @@ public:
                 double rand_value = get_random_value(-1, 1);
                 this->m_swarm[i][j].particles[0].position = rand_value + this->m_init_xy.first;
                 this->m_swarm[i][j].particles[1].position = rand_value + this->m_init_xy.second;
+                // std::cout << "this->m_init_xy : " << this->m_init_xy.first << "\t\t" << this->m_init_xy.second << std::endl;
                 //                 for (int k = 0; k < this->m_swarm[i][j].particles.size(); k++)
                 //                 {
                 //                     double rand_value = get_random_value(-1, 1);

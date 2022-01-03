@@ -46,277 +46,43 @@ Eigen::VectorXd PolyFit(Eigen::VectorXd xvals, Eigen::VectorXd yvals, int order)
 
 int main(int argc, char **argv)
 {
-
-    // Set Input Image Name
-    std::string img_count;
-
-    ///////////////////////////////
-    ///////////////////////////////
-    ///////////////////////////////
-    ///////////////////////////////
-    if (argc != 2)
-    {
-        std::cout << "The command should be comply with this format." << std::endl;
-        std::cout << "Format : rosrun [pkg] [img_num]" << std::endl;
-        // Set Input Image Name
-        img_count = "3";
-
-        // exit(1);
-    }
-    else
-    {
-        // Set Input Image Name
-        img_count = argv[1];
-    }
-
-    ////////////////////////
-    //////// Praram ////////
-    ////////////////////////
-    // Set Input Image Name
-    // img_count = argv[1];
-
-    // // Set Size of Obstacle Image
-    int obstacle_img_width = 960;
-    int obstacle_img_height = 540;
-
-    // // Set Size of Occupancy Grid Map, Astar
-    int occupancy_grid_map_width = 959;
-    int occupancy_grid_map_height = 538;
-
-    ////////////////////////////////////
-    ////////////////////////////////////
-    ////////////////////////////////////
-    //////// Set Obstacle Image ////////
-    ////////////////////////////////////
-    ////////////////////////////////////
-    ////////////////////////////////////
-    // Get Input Img from jpeg
-    cv::Mat obstacle_img;
-    // obstacle_img = cv::imread("/home/a/path_planning_ws/img/" + img_count + ".jpeg");
-    obstacle_img = cv::imread("/home/neubility/path_planning_ws/path_planning/img/" + img_count + ".jpeg");
-    // obstacle_img = cv::imread("/home/neubility/path_planning_ws/path_planning/img/3.jpeg");
-
-    //    obstacle_img = cv::imread("img/" + img_count + ".jpeg");
-    // obstacle_img = cv::imread("img/" + img_count + ".png");
-    if (!obstacle_img.data)
-    {
-        std::cout << "Can't find the image file" << std::endl;
-        exit(1);
-    }
-    cv::resize(obstacle_img, obstacle_img, cv::Size(obstacle_img_width, obstacle_img_height));
-
-    // OpenCV Coordinate -> Occupancy Grid Map Coordinate
-    // OpenCV와 Astar의 Occuapncy Grid Map의 좌표계가 다르기 때문에 상하반전 작업
-    cv::flip(obstacle_img, obstacle_img, 0);
-
     // Set Result Image to visualize
-    cv::Mat result;
-    result = obstacle_img.clone();
+    cv::Mat result(800, 800, CV_8UC3);
+    result.setTo(cv::Scalar(255, 255, 255));
 
-    std::vector<std::pair<double, double>> waypoints;
-    double prev_x_tmp = 0;
-    for (int i = 0; i < obstacle_img.cols; i++)
-        for (int j = 0; j < obstacle_img.rows; j++)
-        {
-            double r_tmp = obstacle_img.at<cv::Vec3b>(j, i)[2];
-            double g_tmp = obstacle_img.at<cv::Vec3b>(j, i)[1];
-            double b_tmp = obstacle_img.at<cv::Vec3b>(j, i)[0];
-            if ((r_tmp + g_tmp + b_tmp) <= 20)
-            {
-                if (i >= 163)
-                {
-                    if (i - prev_x_tmp > 5)
-                    {
-                        // std::cout << obstacle_img.at<cv::Vec3b>(j, i) << "\t\t" << i << "\t\t" << j << std::endl;
-                        waypoints.push_back(std::make_pair(i, j));
-                        // cv::circle(result, cv::Point(i, j), 0, cv::Scalar(0,0,255), 2);
-                    }
-                    prev_x_tmp = i;
-                }
-            }
-        }
+    std::pair<double, double> pso_target_xy = std::make_pair(400, 400);
+    std::pair<double, double> closed_obsts_xy = std::make_pair(50, 50);
+    std::pair<double, double> init_xy = std::make_pair(600, 700);
 
-    int init_pos_x = waypoints[0].first;
-    int init_pos_y = waypoints[0].second;
-    int target_x = waypoints[waypoints.size() - 5].first;
-    int target_y = waypoints[waypoints.size() - 5].second;
+    TimeChecker tc;
+    tc.DeparturePointTime();
+    PSOPlanner pso_search(init_xy, pso_target_xy, closed_obsts_xy);
+    std::cout << "Duration Time : " << tc.ArrivalPointTime() << "ms" << std::endl;
 
-    ///////////////////////
-    ///////////////////////
-    ///////////////////////
-    //////// Astar ////////
-    ///////////////////////
-    ///////////////////////
-    ///////////////////////
-    TimeChecker tc[5];
-    tc[0].DeparturePointTime();
+    std::vector<std::pair<double, double>> pso_result_path_points = pso_search.get_pso_result_path_points();
+    std::vector<std::vector<std::pair<double, double>>> pso_total_result_path_points = pso_search.get_pso_total_result_path_points();
 
-    // Set Astar
-    // PSOPlanner astar(occupancy_grid_map_width, occupancy_grid_map_height, init_pos_x, init_pos_y);
-    PSOPlanner astar;
-    // astar.run();
-
-    std::vector<std::pair<double, double>> pso_result_path_points = astar.get_pso_result_path_points();
-    std::vector<std::vector<std::pair<double, double>>> pso_total_result_path_points = astar.get_pso_total_result_path_points();
-
-    //    // std::vector<std::pair<double, double>> obstacles;
-    //    for(int i = 0; i < obstacle_img.cols; i++)
-    //        for(int j = 0; j < obstacle_img.rows; j++)
-    //        {
-    //            double r_tmp = obstacle_img.at<cv::Vec3b>(j, i)[2];
-    //            double g_tmp = obstacle_img.at<cv::Vec3b>(j, i)[1];
-    //            double b_tmp = obstacle_img.at<cv::Vec3b>(j, i)[0];
-    //            // if((r_tmp + g_tmp + b_tmp) < 700 & (r_tmp + g_tmp + b_tmp) > 500)
-    //            // if(((r_tmp + g_tmp + b_tmp) >= 400) & ((r_tmp + g_tmp + b_tmp) < 700))
-    //            if( b_tmp > 215 & (r_tmp + g_tmp + b_tmp < 590))
-    //            {
-    ////                std::cout << obstacle_img.at<cv::Vec3b>(j, i) << "\t\t" << i << "\t\t" << j << std::endl;
-
-    //                for(int l = -15; l < 15; l++)
-    //                    for(int m = -15; m<15; m++)
-    //                    {
-    //                        // cv::circle(result, cv::Point(i+l, j+m), 0, cv::Scalar(0,255,0), 5);
-    //                        astar.node[i+l + ((j+m) * occupancy_grid_map_width)].close_flag = true;
-    //                        // obstacles.push_back(std::make_pair(i, j));
-    //                    }
-    //            }
-    //        }
-
-    //    // Set Obstacle in Occupancy Grid Map of Astar
-    //    // for(int i = 0; i < obstacle_img.cols; i++)
-    //    //     for(int j = 0; j < obstacle_img.rows; j++)
-    //    //     {
-    //    //         // Obstacle_value 값이 255*3보다 작으면, 장애물의 위치를 의미
-    //    //         int obstacle_value =
-    //    //                             obstacle_img.data[(i * 3 + 0) + (3 * j * obstacle_img.cols)] +
-    //    //                             obstacle_img.data[(i * 3 + 1) + (3 * j * obstacle_img.cols)] +
-    //    //                             obstacle_img.data[(i * 3 + 2) + (3 * j * obstacle_img.cols)];
-
-    //    //         // Set Obstacle
-    //    //         if (obstacle_value < 255*3)
-    //    //         {
-    //    //             int x_tmp = i;
-    //    //             int y_tmp = j;
-    //    //             astar.node[x_tmp + (y_tmp * occupancy_grid_map_width)].close_flag = true;
-    //    //         }
-    //    //     }
-
-    //    // Clipping for init and final pos for existing obstacle
-    //    if(astar.node[init_pos_x + (init_pos_y * occupancy_grid_map_width)].close_flag == true |
-    //            astar.node[init_pos_x + (init_pos_y * occupancy_grid_map_width)].close_flag == true |
-    //	    astar.node[target_x + (target_y * occupancy_grid_map_width)].close_flag == true |
-    //            astar.node[target_x + (target_y * occupancy_grid_map_width)].close_flag == true)
-    //    {
-    //        std::cout << "The position of Init_xy or Final_xy was occupied by obstacle. Change the pos value" << std::endl;
-    //        exit(0);
-    //    }
-
-    //   target_y = target_y - 10;
-    //    // Do Astar
-    //    // You can get the result from vectors of astar.local_xy
-    //    while(!astar.GetResult(target_x,target_y))
-    //    {
-    //    }
-    //    std::cout << "Loop Time : " << tc[0].ArrivalPointTime() << std::endl;
-
-    //    std::vector<double> WPs_x_tmp2;
-    //    std::vector<double> WPs_y_tmp2;
-    //    for (int i = 0; i < waypoints.size(); i++)
-    //    {
-    //        WPs_x_tmp2.push_back(waypoints[i].first);
-    //        WPs_y_tmp2.push_back(waypoints[i].second);
-    //    }
-    //    Eigen::Map<Eigen::VectorXd> x_tmp(&WPs_x_tmp2[0], WPs_x_tmp2.size());
-    //    Eigen::Map<Eigen::VectorXd> y_tmp(&WPs_y_tmp2[0], WPs_y_tmp2.size());
-    //    Eigen::VectorXd coeffs_tmp2 = PolyFit(x_tmp, y_tmp, 3);
-    ////    Eigen::VectorXd coeffs_tmp2(4);
-    ////    coeffs_tmp2 << 1595.485386, 0.3118997227, -0.0009691267892, 3.840002278e-07;
-    ////    coeffs_tmp2 << 1262.65461834417, 0.0203069391261758, -1.20542449927122e-05, 2.37382369415847e-09;
-    ////    1595.485386		0.3118997227		-0.0009691267892		3.840002278e-07
-    //    double sum_of_error = 0;
-    //    double sum_of_rms_square = 0;
-
-    //    double max_error = 0;
-    //    double min_error = 999999;
-    //    for (int i = 0; i < astar.local_x.size(); i++)
-    //    {
-    ////        std::cout << astar.local_x[i]/10. << "\t\t" << astar.local_y[i]/10. << std::endl;
-
-    ////        std::cout << (h_astar2.local_x[i]-1000)/10 << "\t\t";
-    //            double error        = std::fabs(((PolyEval(coeffs_tmp2, astar.local_x[i]))/10. - (astar.local_y[i]/10.)));
-    //            double rms_square   = std::pow(((PolyEval(coeffs_tmp2, astar.local_x[i])))/10. - (astar.local_y[i]/10.),2);
-    //            sum_of_error += error;
-    //            if(error > max_error) max_error = error;
-    //            if(std::fabs(error) < min_error) min_error = error;
-    //            sum_of_rms_square += rms_square;
-    ////            std::cout << error << "\t\t" << rms_square << "\t\t" << ((PolyEval(coeffs_tmp2, astar.local_x[i])))/10. << "\t\t" <<  astar.local_x[i]/10. << "\t\t" << astar.local_y[i]/10. << "\t\t" << PolyEval(coeffs_tmp2, astar.local_x[i]+1000) << std::endl;
-    ////            std::cout << (h_astar2.local_x[i]-1000)/10 << "\t\t";
-    //    }
-
-    //    std::cout << std::endl;
-    //    std::cout << "Max error : " << max_error << std::endl;
-    //    std::cout << "Min error : " << min_error << std::endl;
-    //    std::cout << "Sum of the error : " << sum_of_error << std::endl;
-    //    std::cout << "Avg of the error : " << sum_of_error/astar.local_x.size() << std::endl;
-    //    std::cout << "Sum of the RMS square : " << sum_of_rms_square << std::endl;
-    //    std::cout << "Avg of the RMS square : " << sum_of_rms_square/astar.local_x.size() << std::endl;
-    //    std::cout << "RMS error : " << std::sqrt(sum_of_rms_square/astar.local_x.size()) << std::endl;
-    //    //    std::cout << "PolyEval Test :" << (PolyEval(coeffs_tmp2, 1170)-1000)/10 << "\t\t" << (PolyEval(coeffs_tmp2, 1300)-1000)/10 << "\t\t" << (PolyEval(coeffs_tmp2, 1800)-1000)/10 << std::endl;
-
-    //    std::cout.precision(10);
-    //    std::cout << "coeffs : ";
-    //    for(int i = 0; i < coeffs_tmp2.size(); i++)
-    //        std::cout << coeffs_tmp2[i] << "\t\t";
-    //    std::cout << std::endl;
-
-    ///////////////////////////
-    ///////////////////////////
-    ///////////////////////////
-    ////// Visualization //////
-    ///////////////////////////
-    ///////////////////////////
-    ///////////////////////////
-    /*
-    for(int i = 0; i < adj_nodes_x.size(); i++)
-    {
-        int color_tmp = i % 255;
-        cv::circle(result, cv::Point(adj_nodes_x[i], adj_nodes_y[i]), 0, cv::Scalar(0, 0, color_tmp), 1);
-//        cv::imshow("Result of Astar", result);
-//        cv::waitKey();
-    }
-*/
-
-    std::pair<double, double> closed_obsts_xy = astar.get_closed_obsts_xy();
-    cv::line(result, cv::Point(closed_obsts_xy.first, closed_obsts_xy.second), cv::Point(closed_obsts_xy.first, closed_obsts_xy.second), cv::Scalar(255, 0, 0), 10, 8, 0);
+    cv::line(result, cv::Point(closed_obsts_xy.first, closed_obsts_xy.second), cv::Point(closed_obsts_xy.first, closed_obsts_xy.second), cv::Scalar(255, 0, 0), 15, 8, 0);
+    cv::line(result, cv::Point(init_xy.first, init_xy.second), cv::Point(init_xy.first, init_xy.second), cv::Scalar(0, 255, 0), 15, 8, 0);
+    cv::line(result, cv::Point(pso_target_xy.first, pso_target_xy.second), cv::Point(pso_target_xy.first, pso_target_xy.second), cv::Scalar(0, 0, 0), 15, 8, 0);
 
     // for (int i = 0; i < pso_result_path_points.size() - 1; i++)
     // {
     //     cv::line(result, cv::Point(pso_result_path_points[i].first, pso_result_path_points[i].second), cv::Point(pso_result_path_points[i + 1].first, pso_result_path_points[i + 1].second), cv::Scalar(0, 0, 255), 1, 8, 0);
     // }
 
-    for (int i = 0; i < pso_total_result_path_points.size(); i++)
+    for (int i = 0; i < pso_total_result_path_points.size() - 1; i++)
     {
-        for (int j = 0; j < pso_total_result_path_points[i].size(); j++)
+        for (int j = 0; j < pso_total_result_path_points[i].size() - 1; j++)
         {
             cv::line(result, cv::Point(pso_total_result_path_points[i][j].first, pso_total_result_path_points[i][j].second), cv::Point(pso_total_result_path_points[i][j + 1].first, pso_total_result_path_points[i][j + 1].second), cv::Scalar(0, 0, 255), 1, 8, 0);
+            // std::cout << pso_total_result_path_points[i][j].first << "\t\t" << pso_total_result_path_points[i][j].second << std::endl;
         }
+        // std::cout << std::endl;
     }
 
-    //    for(int i = 0; i < astar.local_x.size()-1; i++)
-    //    {
-    //        // cv::circle(result, cv::Point(astar.local_x[i], astar.local_y[i]), 0, cv::Scalar(0,0,255), 1);
-    //        cv::line(result, cv::Point(astar.local_x[i], astar.local_y[i]), cv::Point(astar.local_x[i+1], astar.local_y[i+1]), cv::Scalar(0,0,255), 1, 8, 0);
-    //    }
-
-    // Occupancy Grid Map Coordinate -> OpenCV Coordinate
-    // OpenCV와 Astar의 Occuapncy Grid Map의 좌표계가 다르기 때문에 상하반전 작업
-    // cv::resize(obstacle_img, obstacle_img, cv::Size(960, 540));
-    // cv::resize(result, result, cv::Size(960, 540));
-    cv::flip(obstacle_img, obstacle_img, 0);
-    cv::flip(result, result, 0);
-
     //    cv::imshow("Input Obstacle Img", obstacle_img);
-    cv::imshow("Result of Astar", result);
+    cv::imshow("Result of PSO Path Planner", result);
     cv::imwrite("img/result/result.jpeg", result);
 
     // If push 'q', exit the progmram
