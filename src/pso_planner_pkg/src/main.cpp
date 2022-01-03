@@ -51,8 +51,8 @@ int main(int argc, char **argv)
     result.setTo(cv::Scalar(255, 255, 255));
 
     std::pair<double, double> pso_target_xy = std::make_pair(400, 400);
-    std::pair<double, double> closed_obsts_xy = std::make_pair(50, 50);
-    std::pair<double, double> init_xy = std::make_pair(600, 700);
+    std::pair<double, double> closed_obsts_xy = std::make_pair(450, 450);
+    std::pair<double, double> init_xy = std::make_pair(700, 700);
 
     TimeChecker tc;
     tc.DeparturePointTime();
@@ -71,12 +71,14 @@ int main(int argc, char **argv)
     //     cv::line(result, cv::Point(pso_result_path_points[i].first, pso_result_path_points[i].second), cv::Point(pso_result_path_points[i + 1].first, pso_result_path_points[i + 1].second), cv::Scalar(0, 0, 255), 1, 8, 0);
     // }
 
-    for (int i = 0; i < pso_total_result_path_points.size() - 1; i++)
+    for (int i = 0; i < pso_total_result_path_points.size(); i++)
     {
+        // std::cout << "Size : " << pso_total_result_path_points[i].size() << std::endl;
         for (int j = 0; j < pso_total_result_path_points[i].size() - 1; j++)
         {
             cv::line(result, cv::Point(pso_total_result_path_points[i][j].first, pso_total_result_path_points[i][j].second), cv::Point(pso_total_result_path_points[i][j + 1].first, pso_total_result_path_points[i][j + 1].second), cv::Scalar(0, 0, 255), 1, 8, 0);
-            // std::cout << pso_total_result_path_points[i][j].first << "\t\t" << pso_total_result_path_points[i][j].second << std::endl;
+            cv::line(result, cv::Point(pso_total_result_path_points[i][j].first, pso_total_result_path_points[i][j].second), cv::Point(pso_total_result_path_points[i][j].first, pso_total_result_path_points[i][j].second), cv::Scalar(0, 0, 255), 3, 8, 0);
+            // std::cout << pso_total_result_path_points[i][j].first << ", " << pso_total_result_path_points[i][j].second << "\t\t";
         }
         // std::cout << std::endl;
     }
