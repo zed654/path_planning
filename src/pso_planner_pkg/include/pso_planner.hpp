@@ -156,10 +156,10 @@ public:
             update_new_node_fitness_value();
 
             /* Updated 된 Fitness 를 기반으로 Personal Best 에 해당하는 Index 갱신 */
-            renew_personal_best_position();
+            update_personal_best_position();
 
             /* Updated 된 Fitness 를 기반으로 Global Best 에 해당되는 Index 갱신 */
-            renew_global_best_position();
+            update_global_best_position();
 
             /* 새로운 Swarm 을 생성 (Particles 의 position, velocity 계산 완료) */
             update_new_swarm();
@@ -298,7 +298,7 @@ public:
 #endif
     }
 
-    void renew_personal_best_position()
+    void update_personal_best_position()
     {
         this->m_personal_best_array_index; // std::vector<int>
         for (int i = 0; i < this->m_swarm.size(); i++)
@@ -324,7 +324,7 @@ public:
 #endif
     }
 
-    void renew_global_best_position()
+    void update_global_best_position()
     {
         double tmp = 1e+15;
         for (int i = 0; i < this->m_swarm.size(); i++)
@@ -1170,7 +1170,7 @@ private:
 //         }
 //     }
 
-//     void renew_personal_best_position()
+//     void update_personal_best_position()
 //     {
 //         this->m_personal_best_array_index; // std::vector<int>
 
@@ -1186,7 +1186,7 @@ private:
 //         }
 //     }
 
-//     void renew_global_best_position()
+//     void update_global_best_position()
 //     {
 //         this->m_global_best_array_index; // std::pair<int, int>
 //     }
@@ -1197,7 +1197,7 @@ private:
 //         update_new_node_fitness_value();
 
 //         /* Updated 된 Fitness 를 기반으로 Personal Best 에 해당하는 Index 갱신 */
-//         renew_personal_best_position();
+//         update_personal_best_position();
 
 //         /* 새로운 Swarm 을 생성 (Particles 의 position, velocity 계산 완료) */
 //         update_new_swarm();
