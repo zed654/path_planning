@@ -1,0 +1,21 @@
+[0.043s] Invoking command in '/home/neubility/path_planning_ws/path_planning/build/grid_algorithm_pkg': /usr/bin/cmake /home/neubility/path_planning_ws/path_planning/src/grid_algorithm_pkg -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/neubility/path_planning_ws/path_planning/install/grid_algorithm_pkg
+[0.078s] CMake Error at CMakeLists.txt:8 (find_package):
+[0.078s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.078s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.078s]   CMake did not find one.
+[0.078s] 
+[0.079s]   Could not find a package configuration file provided by "catkin" with any
+[0.079s]   of the following names:
+[0.079s] 
+[0.079s]     catkinConfig.cmake
+[0.079s]     catkin-config.cmake
+[0.080s] 
+[0.080s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.080s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.080s]   provides a separate development package or SDK, be sure it has been
+[0.080s]   installed.
+[0.080s] 
+[0.080s] 
+[0.081s] -- Configuring incomplete, errors occurred!
+[0.081s] See also "/home/neubility/path_planning_ws/path_planning/build/grid_algorithm_pkg/CMakeFiles/CMakeOutput.log".
+[0.091s] Invoked command in '/home/neubility/path_planning_ws/path_planning/build/grid_algorithm_pkg' returned '1': /usr/bin/cmake /home/neubility/path_planning_ws/path_planning/src/grid_algorithm_pkg -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/neubility/path_planning_ws/path_planning/install/grid_algorithm_pkg

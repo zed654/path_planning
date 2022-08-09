@@ -1,0 +1,108 @@
+[0.014s] Invoking command in '/home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake --build /home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg
+[0.081s] [35m[1mScanning dependencies of target pso_planner_pkg[0m
+[0.094s] [ 33%] [32mBuilding CXX object CMakeFiles/pso_planner_pkg.dir/src/main.cpp.o[0m
+[0.373s] In file included from [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:8:0[m[K:
+[0.373s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:[m[K In constructor ‘[01m[KPSOPlanner::PSOPlanner(const std::pair<double, double>&, const std::pair<double, double>&, const std::pair<double, double>&)[m[K’:
+[0.373s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:117:15:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+[0.373s]          [01;35m[Kthis->m_personal_best_array_index[m[K;
+[0.373s]          [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.373s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:118:15:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+[0.373s]          [01;35m[Kthis->m_global_best_array_index[m[K;
+[0.373s]          [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.373s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:119:15:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+[0.373s]          [01;35m[Kthis->m_swarm[m[K;
+[0.373s]          [01;35m[K~~~~~~^~~~~~~[m[K
+[0.374s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:[m[K In member function ‘[01m[Kvoid PSOPlanner::run()[m[K’:
+[0.374s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:184:27:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[0.375s]          for (int i = 0; [01;35m[Ki < this->m_swarm[this->m_global_best_array_index.first].size()[m[K; i++)
+[0.375s]                          [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.380s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:192:27:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[0.380s]          for (int i = 0; [01;35m[Ki < this->m_swarm.size()[m[K; i++)
+[0.380s]                          [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.380s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:195:31:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[0.380s]              for (int j = 0; [01;35m[Kj < this->m_swarm[i].size()[m[K; j++)
+[0.380s]                              [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.383s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:[m[K In member function ‘[01m[Kvoid PSOPlanner::init_first_particles()[m[K’:
+[0.383s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:221:27:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[0.383s]          for (int i = 0; [01;35m[Ki < this->m_swarm.size()[m[K; i++)
+[0.384s]                          [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.384s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:223:31:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[0.384s]              for (int j = 0; [01;35m[Kj < this->m_swarm[i].size()[m[K; j++)
+[0.384s]                              [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.384s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:[m[K In member function ‘[01m[Kvoid PSOPlanner::update_new_swarm_fitness_value()[m[K’:
+[0.384s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:267:27:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[0.384s]          for (int i = 0; [01;35m[Ki < this->m_swarm.size()[m[K; i++)
+[0.384s]                          [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.385s] In file included from [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:8:0[m[K:
+[0.385s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:[m[K In member function ‘[01m[Kvoid PSOPlanner::update_personal_best_swarm()[m[K’:
+[0.385s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:320:15:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+[0.385s]          [01;35m[Kthis->m_personal_best_array_index[m[K; // std::vector<int>
+[0.385s]          [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.385s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:321:27:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[0.385s]          for (int i = 0; [01;35m[Ki < this->m_swarm.size()[m[K; i++)
+[0.385s]                          [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.386s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:324:31:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[0.386s]              for (int j = 0; [01;35m[Kj < this->m_swarm[i].size()[m[K; j++)
+[0.386s]                              [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.386s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:[m[K In member function ‘[01m[Kvoid PSOPlanner::update_global_best_swarm()[m[K’:
+[0.386s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:347:27:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[0.386s]          for (int i = 0; [01;35m[Ki < this->m_swarm.size()[m[K; i++)
+[0.386s]                          [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.386s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:349:31:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[0.386s]              for (int j = 0; [01;35m[Kj < this->m_swarm[i].size()[m[K; j++)
+[0.386s]                              [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.388s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:[m[K In member function ‘[01m[Kvoid PSOPlanner::update_new_swarm()[m[K’:
+[0.388s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:392:27:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[0.388s]          for (int i = 0; [01;35m[Ki < this->m_swarm.size()[m[K; i++)
+[0.388s]                          [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.388s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:438:31:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[0.388s]              for (int k = 0; [01;35m[Kk < this->m_swarm[i][swarm_depth_end_index].particles.size()[m[K; k++)
+[0.388s]                              [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.388s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:447:24:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knew_position[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[0.388s]                  double [01;35m[Knew_position[m[K = current_particle->position + new_velocity;
+[0.388s]                         [01;35m[K^~~~~~~~~~~~[m[K
+[0.388s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/include/pso_planner.hpp:455:31:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[0.388s]              for (int k = 0; [01;35m[Kk < this->m_swarm[i][swarm_depth_end_index].particles.size()[m[K; k++)
+[0.388s]                              [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.088s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.088s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:100:23:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[1.088s]      for (int i = 0; [01;35m[Ki < global_best_position_array.size()[m[K; i++)
+[1.088s]                      [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.088s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:112:23:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[1.088s]      for (int i = 0; [01;35m[Ki < pso_total_result_path_points.size()[m[K; i++)
+[1.088s]                      [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.088s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:115:27:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[1.088s]          for (int j = 0; [01;35m[Kj < pso_total_result_path_points[i].size() - 1[m[K; j++)
+[1.088s]                          [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.088s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:129:23:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[1.088s]      for (int i = 0; [01;35m[Ki < pso_total_result_path_points.size()[m[K; i++)
+[1.089s]                      [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.089s] [01m[K/home/neubility/path_planning_ws/path_planning/src/pso_planner_pkg/src/main.cpp:131:27:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[1.089s]          for (int j = 0; [01;35m[Kj < pso_total_result_path_points[i].size()[m[K; j++)
+[1.089s]                          [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.070s] [ 66%] [32m[1mLinking CXX executable pso_planner_pkg[0m
+[5.512s] [100%] Built target pso_planner_pkg
+[5.524s] Invoked command in '/home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake --build /home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg
+[5.594s] Invoking command in '/home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake --build /home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg --target install
+[5.668s] [100%] Built target pso_planner_pkg
+[5.695s] [36mInstall the project...[0m
+[5.705s] -- Install configuration: ""
+[5.705s] -- Installing: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/lib/pso_planner_pkg/pso_planner_pkg
+[5.707s] -- Set runtime path of "/home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/lib/pso_planner_pkg/pso_planner_pkg" to ""
+[5.707s] -- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/launch
+[5.708s] -- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/ament_index/resource_index/package_run_dependencies/pso_planner_pkg
+[5.708s] -- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/ament_index/resource_index/parent_prefix_path/pso_planner_pkg
+[5.708s] -- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/environment/ament_prefix_path.sh
+[5.708s] -- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/environment/ament_prefix_path.dsv
+[5.708s] -- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/environment/path.sh
+[5.708s] -- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/environment/path.dsv
+[5.708s] -- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/local_setup.bash
+[5.708s] -- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/local_setup.sh
+[5.708s] -- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/local_setup.zsh
+[5.708s] -- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/local_setup.dsv
+[5.709s] -- Installing: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/package.dsv
+[5.709s] -- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/ament_index/resource_index/packages/pso_planner_pkg
+[5.709s] -- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/cmake/pso_planner_pkgConfig.cmake
+[5.709s] -- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/cmake/pso_planner_pkgConfig-version.cmake
+[5.709s] -- Up-to-date: /home/neubility/path_planning_ws/path_planning/install/pso_planner_pkg/share/pso_planner_pkg/package.xml
+[5.712s] Invoked command in '/home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake --build /home/neubility/path_planning_ws/path_planning/build/pso_planner_pkg --target install
