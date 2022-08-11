@@ -128,7 +128,7 @@ public:
         // this->m_init_flag = true; // Rand 함수 때문
         // this->m_fitness_w1 = 10;
         // this->m_fitness_w2 = 1; //1;
-        this->m_w = 100;            // 0.25;
+        this->m_w = 0.25;           // 0.25;
         this->m_c1 = 2.0;           // 1; // Local Best 추종 파라미터
         this->m_c2 = 2.5;           // 1; // Global Best 추종 파라미터
         this->m_init_flag = true;   // Rand 함수 때문
@@ -140,10 +140,10 @@ public:
         this->m_particle_size = 2; // x, y
 
         /* Swarm 개수 초기화 */
-        this->m_swarm_size = 5;
+        this->m_swarm_size = 20;
 
         /* 반복 횟수 초기화 */
-        this->m_repeat_count = 40;
+        this->m_repeat_count = 100;
 
         this->m_pso_target_xy = target_xy;
         this->m_closed_obsts_xy = obsts_xy;
@@ -284,26 +284,6 @@ public:
     {
         for (int i = 0; i < this->m_swarm.size(); i++)
         {
-            /* TODO: Particle 에 따라 fitness 를 정의하시오 */
-            // int swarm_depth_end_index = this->m_swarm[i].size() - 1;
-            // for (int k = 0; k < m_swarm[i][swarm_depth_end_index].particles.size(); k++)
-            // {
-            //     m_swarm[i][swarm_depth_end_index].particles[k].fitness = 1; // FIXME: 계산하시오. (ㅡ.ㅡ)
-            // }
-
-            // int swarm_depth_end_index = this->m_swarm[i].size() - 1;
-            // if (m_swarm[i][swarm_depth_end_index].particles.size() == 2)
-            // {
-            //     float x_tmp = this->m_swarm[i][swarm_depth_end_index].particles[0].position;
-            //     float y_tmp = this->m_swarm[i][swarm_depth_end_index].particles[1].position;
-            //     this->m_swarm[i][swarm_depth_end_index].particles[0].fitness = this->m_fitness_w1 * 1. / std::fabs(m_closed_obsts_xy.first - x_tmp) + this->m_fitness_w2 * std::fabs(m_pso_target_xy.first - x_tmp);
-            //     this->m_swarm[i][swarm_depth_end_index].particles[1].fitness = this->m_fitness_w1 * 1. / std::fabs(m_closed_obsts_xy.second - y_tmp) + this->m_fitness_w2 * std::fabs(m_pso_target_xy.second - y_tmp);
-            // }
-            // else
-            // {
-            //     std::cout << "너 무언가 잘못되었다 ^^" << std::endl;
-            // }
-
             /* 본 예제는 fitness 함수를 작게 만드는 것이 목적 */
             int swarm_depth_end_index = this->m_swarm[i].size() - 1;
             if (m_swarm[i][swarm_depth_end_index].particles.size() == 2)
@@ -312,19 +292,6 @@ public:
                 float y_tmp = this->m_swarm[i][swarm_depth_end_index].particles[1].position;
                 this->m_swarm[i][swarm_depth_end_index].particles[0].fitness = this->m_fitness_w2 * std::fabs(m_pso_target_xy.first - x_tmp);
                 this->m_swarm[i][swarm_depth_end_index].particles[1].fitness = this->m_fitness_w2 * std::fabs(m_pso_target_xy.second - y_tmp);
-
-                // if (swarm_depth_end_index > 1)
-                // {
-                //     // this->m_swarm[i][swarm_depth_end_index].fitness = -1/this->m_swarm[i][swarm_depth_end_index-1].fitness + this->m_fitness_w1 * 1. / std::hypot(m_closed_obsts_xy.first - x_tmp, m_closed_obsts_xy.second - y_tmp) + this->m_fitness_w2 * std::hypot(m_pso_target_xy.first - x_tmp, m_pso_target_xy.second - y_tmp);
-                //     // this->m_swarm[i][swarm_depth_end_index].fitness = this->m_fitness_w1 * 1. / std::hypot(m_closed_obsts_xy.first - x_tmp, m_closed_obsts_xy.second - y_tmp) + this->m_fitness_w2 * std::hypot(m_pso_target_xy.first - x_tmp, m_pso_target_xy.second - y_tmp);
-                //     this->m_swarm[i][swarm_depth_end_index].particles[0].fitness = this->m_fitness_w2 * std::fabs(m_pso_target_xy.first - x_tmp);
-                //     this->m_swarm[i][swarm_depth_end_index].particles[1].fitness = this->m_fitness_w2 * std::fabs(m_pso_target_xy.second - y_tmp);
-                // }
-                // else
-                // {
-                //     // this->m_swarm[i][swarm_depth_end_index].particles[k].fitness = this->m_fitness_w1 * 1. / std::hypot(m_closed_obsts_xy.first - x_tmp, m_closed_obsts_xy.second - y_tmp) + this->m_fitness_w2 * std::hypot(m_pso_target_xy.first - x_tmp, m_pso_target_xy.second - y_tmp);
-                // }
-                // this->m_swarm[i][swarm_depth_end_index].fitness = this->m_fitness_w2 * std::hypot(m_pso_target_xy.first - x_tmp, m_pso_target_xy.second - y_tmp);
             }
             else
             {
@@ -403,27 +370,6 @@ public:
 
     void update_new_swarm()
     {
-        // /* Updaet New Swarm */
-        // for (int i = 0; i < this->m_swarm.size(); i++)
-        // {
-        //     int swarm_depth_end_index = this->m_swarm[i].size() - 1;
-        //     Swarm new_swarm_particles(this->m_particle_size);
-        //     // Swarm new_swarm_particles(this->m_swarm[i][swarm_depth_end_index].particles.size());
-        //     for (int k = 0; k < this->m_swarm[i][swarm_depth_end_index].particles.size(); k++)
-        //     {
-        //         Particles personal_best_swarm_particle = this->m_swarm[i][this->m_personal_best_array_index[i]].particles[k];
-        //         Particles global_best_swarm_particle = this->m_swarm[this->m_global_best_array_index.first][this->m_global_best_array_index.second].particles[k];
-
-        //         Particles *current_particle = &(this->m_swarm[i][swarm_depth_end_index].particles[k]);
-        //         double new_velocity = current_particle[k].velocity * this->m_w + this->m_c1 * get_random_value(0, 1) * (current_particle->position - personal_best_swarm_particle.position) + this->m_c2 * get_random_value(0, 1) * (current_particle->position - global_best_swarm_particle.position);
-        //         double new_position = current_particle[k].position + new_velocity;
-
-        //         new_swarm_particles.particles[k].velocity = new_velocity;
-        //         new_swarm_particles.particles[k].position = new_position;
-        //     }
-        //     this->m_swarm[i].push_back(new_swarm_particles);
-        // }
-
         /* Updaet New Swarm */
         for (int i = 0; i < this->m_swarm.size(); i++)
         {
@@ -438,17 +384,15 @@ public:
             {
                 Particles personal_best_swarm_particle = this->m_swarm[i][this->m_personal_best_array_index[k][i]].particles[k];
                 Particles global_best_swarm_particle = this->m_swarm[this->m_global_best_array_index[k].first][this->m_global_best_array_index[k].second].particles[k];
-                // Particles personal_best_swarm_particle = this->m_swarm[i][this->m_personal_best_array_index[i]].particles[k];
-                // Particles global_best_swarm_particle = this->m_swarm[this->m_global_best_array_index.first][this->m_global_best_array_index.second].particles[k];
 
                 Particles *current_particle = &(this->m_swarm[i][swarm_depth_end_index].particles[k]);
                 double rand_1 = get_random_value(0, 1);
                 double rand_2 = get_random_value(0, 1);
                 double new_velocity = current_particle->velocity * this->m_w + this->m_c1 * rand_1 * (personal_best_swarm_particle.position - current_particle->position) + this->m_c2 * rand_2 * (global_best_swarm_particle.position - current_particle->position);
-                if (new_velocity > 10)
-                    new_velocity = 10;
-                else if (new_velocity < -10)
-                    new_velocity = -10;
+                if (new_velocity > 50)
+                    new_velocity = 50;
+                else if (new_velocity < -50)
+                    new_velocity = -50;
                 double new_position = current_particle->position + new_velocity;
                 new_swarm_particles.particles[k].position = new_position;
                 new_swarm_particles.particles[k].velocity = new_velocity;
