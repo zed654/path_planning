@@ -1,4 +1,0 @@
-[35m[1mScanning dependencies of target pso_planner_pkg[0m
-[ 33%] [32mBuilding CXX object CMakeFiles/pso_planner_pkg.dir/src/main.cpp.o[0m
-[ 66%] [32m[1mLinking CXX executable pso_planner_pkg[0m
-[100%] Built target pso_planner_pkg

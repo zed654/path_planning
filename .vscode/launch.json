@@ -1,0 +1,74 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug-rclpy(debugpy)",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Debug-rclcpp(gbd)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/install/${input:package}/lib/${input:package}/${input:node}",
+      "args": [
+        "${input:init_pose_x}",
+        "${input:init_pose_y}"
+        "${input:obstacle_pose_x}",
+        "${input:obstacle_pose_y}"
+      ],
+      "preLaunchTask": "colcon: build",
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "id": "package",
+      "type": "promptString",
+      "description": "package name",
+      "default": "pso_planner_pkg"
+    },
+    {
+      "id": "node",
+      "type": "promptString",
+      "description": "node name",
+      "default": "pso_planner_pkg"
+    },
+    {
+      "id": "init_pose_x",
+      "type": "promptString",
+      "description": "node name",
+      "default": "100"
+    },
+    {
+      "id": "init_pose_y",
+      "type": "promptString",
+      "description": "node name",
+      "default": "100"
+    },
+    {
+      "id": "obstacle_pose_x",
+      "type": "promptString",
+      "description": "node name",
+      "default": "700"
+    },
+    {
+      "id": "obstacle_pose_y",
+      "type": "promptString",
+      "description": "node name",
+      "default": "700"
+    }
+  ]
+}

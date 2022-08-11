@@ -1,5 +1,0 @@
-[35m[1mScanning dependencies of target hybrid_a_star_algorithm_pkg[0m
-[ 33%] [32mBuilding CXX object CMakeFiles/hybrid_a_star_algorithm_pkg.dir/src/monitor.cpp.o[0m
-[ 66%] [32mBuilding CXX object CMakeFiles/hybrid_a_star_algorithm_pkg.dir/src/main.cpp.o[0m
-[100%] [32m[1mLinking CXX executable hybrid_a_star_algorithm_pkg[0m
-[100%] Built target hybrid_a_star_algorithm_pkg
