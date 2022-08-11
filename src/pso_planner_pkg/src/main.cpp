@@ -81,7 +81,7 @@ int main(int argc, char **argv)
         std::vector<std::pair<double, double>> pso_result_path_points = pso_search.get_pso_result_path_points();
         std::vector<std::vector<std::pair<double, double>>> pso_total_result_path_points = pso_search.get_pso_total_result_path_points();
         std::vector<std::pair<double, double>> global_best_position_array = pso_search.get_global_best_position_array();
-        std::pair<int, int> global_best_array_index = pso_search.get_global_best_array_index();
+        // std::pair<int, int> global_best_array_index = pso_search.get_global_best_array_index();
         std::vector<double> swarms_total_fitness = pso_search.get_swarms_total_fitness();
 
         cv::line(result, cv::Point(closed_obsts_xy.first, closed_obsts_xy.second), cv::Point(closed_obsts_xy.first, closed_obsts_xy.second), cv::Scalar(0, 0, 255), 15, 8, 0);
