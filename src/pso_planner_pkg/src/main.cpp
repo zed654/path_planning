@@ -84,10 +84,6 @@ int main(int argc, char **argv)
         std::pair<int, int> global_best_array_index = pso_search.get_global_best_array_index();
         std::vector<double> swarms_total_fitness = pso_search.get_swarms_total_fitness();
 
-        cv::line(result, cv::Point(closed_obsts_xy.first, closed_obsts_xy.second), cv::Point(closed_obsts_xy.first, closed_obsts_xy.second), cv::Scalar(0, 0, 255), 15, 8, 0);
-        cv::line(result, cv::Point(init_xy.first, init_xy.second), cv::Point(init_xy.first, init_xy.second), cv::Scalar(0, 255, 0), 15, 8, 0);
-        cv::line(result, cv::Point(pso_target_xy.first, pso_target_xy.second), cv::Point(pso_target_xy.first, pso_target_xy.second), cv::Scalar(0, 0, 0), 15, 8, 0);
-
         // for (int i = 0; i < pso_result_path_points.size() - 1; i++)
         // {
         //     cv::line(result, cv::Point(pso_result_path_points[i].first, pso_result_path_points[i].second), cv::Point(pso_result_path_points[i + 1].first, pso_result_path_points[i + 1].second), cv::Scalar(0, 0, 255), 1, 8, 0);
@@ -136,10 +132,10 @@ int main(int argc, char **argv)
             for (int j = 0; j < pso_total_result_path_points[i].size() - 1; j++)
             {
                 // if (i == global_best_array_index.first)
-                if (i == best_swarm_index)
-                    cv::line(result, cv::Point(pso_total_result_path_points[i][j].first, pso_total_result_path_points[i][j].second), cv::Point(pso_total_result_path_points[i][j + 1].first, pso_total_result_path_points[i][j + 1].second), cv::Scalar(0, 0, 255), 2, 8, 0);
-                else
-                    cv::line(result, cv::Point(pso_total_result_path_points[i][j].first, pso_total_result_path_points[i][j].second), cv::Point(pso_total_result_path_points[i][j + 1].first, pso_total_result_path_points[i][j + 1].second), cv::Scalar(0, 255, 0), 1, 8, 0);
+                // if (i == best_swarm_index)
+                // cv::line(result, cv::Point(pso_total_result_path_points[i][j].first, pso_total_result_path_points[i][j].second), cv::Point(pso_total_result_path_points[i][j + 1].first, pso_total_result_path_points[i][j + 1].second), cv::Scalar(0, 0, 255), 2, 8, 0);
+                // else
+                cv::line(result, cv::Point(pso_total_result_path_points[i][j].first, pso_total_result_path_points[i][j].second), cv::Point(pso_total_result_path_points[i][j + 1].first, pso_total_result_path_points[i][j + 1].second), cv::Scalar(0, 255, 0), 1, 8, 0);
                 // cv::line(result, cv::Point(pso_total_result_path_points[i][j].first, pso_total_result_path_points[i][j].second), cv::Point(pso_total_result_path_points[i][j].first, pso_total_result_path_points[i][j].second), cv::Scalar(0, 0, 255), 3, 8, 0);
                 // std::cout << pso_total_result_path_points[i][j].first << ", " << pso_total_result_path_points[i][j].second << "\t\t";
             }
@@ -173,6 +169,24 @@ int main(int argc, char **argv)
             }
             // std::cout << std::endl;
         }
+
+        for (int i = 0; i < pso_total_result_path_points.size(); i++)
+        {
+            // std::cout << "Size : " << pso_total_result_path_points[i].size() << std::endl;
+            for (int j = 0; j < pso_total_result_path_points[i].size() - 1; j++)
+            {
+                // if (i == global_best_array_index.first)
+                if (i == best_swarm_index)
+                    cv::line(result, cv::Point(pso_total_result_path_points[i][j].first, pso_total_result_path_points[i][j].second), cv::Point(pso_total_result_path_points[i][j + 1].first, pso_total_result_path_points[i][j + 1].second), cv::Scalar(0, 0, 255), 2, 8, 0);
+                // cv::line(result, cv::Point(pso_total_result_path_points[i][j].first, pso_total_result_path_points[i][j].second), cv::Point(pso_total_result_path_points[i][j].first, pso_total_result_path_points[i][j].second), cv::Scalar(0, 0, 255), 3, 8, 0);
+                // std::cout << pso_total_result_path_points[i][j].first << ", " << pso_total_result_path_points[i][j].second << "\t\t";
+            }
+            // std::cout << std::endl;
+        }
+
+        cv::line(result, cv::Point(closed_obsts_xy.first, closed_obsts_xy.second), cv::Point(closed_obsts_xy.first, closed_obsts_xy.second), cv::Scalar(0, 0, 255), 15, 8, 0);
+        cv::line(result, cv::Point(init_xy.first, init_xy.second), cv::Point(init_xy.first, init_xy.second), cv::Scalar(0, 255, 0), 15, 8, 0);
+        cv::line(result, cv::Point(pso_target_xy.first, pso_target_xy.second), cv::Point(pso_target_xy.first, pso_target_xy.second), cv::Scalar(0, 0, 0), 15, 8, 0);
 
         //    cv::imshow("Input Obstacle Img", obstacle_img);
         cv::imshow("Result of PSO Path Planner", result);

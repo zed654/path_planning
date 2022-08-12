@@ -129,22 +129,22 @@ public:
         // this->m_init_flag = true; // Rand 함수 때문
         // this->m_fitness_w1 = 10;
         // this->m_fitness_w2 = 1; //1;
-        this->m_w = 100;            // 0.25;
+        this->m_w = 10;             // 0.25;
         this->m_c1 = 2.0;           // 1; // Local Best 추종 파라미터
-        this->m_c2 = 2.5;           // 1; // Global Best 추종 파라미터
+        this->m_c2 = 1.0;           // 1; // Global Best 추종 파라미터
         this->m_init_flag = true;   // Rand 함수 때문
         this->m_fitness_w1 = 10000; // 20000;
         this->m_fitness_w2 = 1;     // 1000;
-        this->m_step_size = 20.0;   // 20;
+        this->m_step_size = 30.0;   // 20;
 
         /* Particle 개수 초기화 (ex. x, y) */
         this->m_particle_size = 2; // x, y
 
         /* Swarm 개수 초기화 */
-        this->m_swarm_size = 5;
+        this->m_swarm_size = 90;
 
         /* 반복 횟수 초기화 */
-        this->m_repeat_count = 30;
+        this->m_repeat_count = 12;
 
         this->m_pso_target_xy = target_xy;
         this->m_closed_obsts_xy = obsts_xy;
@@ -239,15 +239,28 @@ public:
             for (int j = 0; j < this->m_swarm[i].size(); j++)
             {
                 // FIXME: 초기위치 바꿨는대, 적용 안됨
-                double rand_value_1 = get_random_value(-1, 1);
-                double rand_value_2 = get_random_value(-1, 1);
+
+                double rand_value_1 = get_random_value(0, 1);
+                double rand_value_2 = get_random_value(-1, 0);
                 float rand_value_size = std::sqrt(std::pow(rand_value_1, 2) + std::pow(rand_value_2, 2));
                 // rand_value_1 = rand_value_1 * this->m_step_size / rand_value_size;
                 // rand_value_2 = rand_value_2 * this->m_step_size / rand_value_size;
-                rand_value_1 = rand_value_1 * 50 / rand_value_size;
-                rand_value_2 = rand_value_2 * 50 / rand_value_size;
+                rand_value_1 = rand_value_1 * 1 / rand_value_size;
+                rand_value_2 = rand_value_2 * 1 / rand_value_size;
                 this->m_swarm[i][j].particles[0].position = rand_value_1 + this->m_init_xy.first;
                 this->m_swarm[i][j].particles[1].position = rand_value_2 + this->m_init_xy.second;
+                // this->m_swarm[i][j].particles[0].position = this->m_init_xy.first + 10 * i;
+                // this->m_swarm[i][j].particles[1].position = this->m_init_xy.second + 10 * i;
+
+                // double rand_value_1 = get_random_value(-1, 1);
+                // double rand_value_2 = get_random_value(-1, 1);
+                // float rand_value_size = std::sqrt(std::pow(rand_value_1, 2) + std::pow(rand_value_2, 2));
+                // // rand_value_1 = rand_value_1 * this->m_step_size / rand_value_size;
+                // // rand_value_2 = rand_value_2 * this->m_step_size / rand_value_size;
+                // rand_value_1 = rand_value_1 * 50 / rand_value_size;
+                // rand_value_2 = rand_value_2 * 50 / rand_value_size;
+                // this->m_swarm[i][j].particles[0].position = rand_value_1 + this->m_init_xy.first;
+                // this->m_swarm[i][j].particles[1].position = rand_value_2 + this->m_init_xy.second;
 
                 // 초기 속도 인가
                 // this->m_swarm[i][j].particles[0].velocity = get_random_value(-1, 1);
@@ -313,8 +326,8 @@ public:
                 if (swarm_depth_end_index > 1)
                 {
                     // this->m_swarm[i][swarm_depth_end_index].fitness = -1/this->m_swarm[i][swarm_depth_end_index-1].fitness + this->m_fitness_w1 * 1. / std::hypot(m_closed_obsts_xy.first - x_tmp, m_closed_obsts_xy.second - y_tmp) + this->m_fitness_w2 * std::hypot(m_pso_target_xy.first - x_tmp, m_pso_target_xy.second - y_tmp);
-                    // this->m_swarm[i][swarm_depth_end_index].fitness = this->m_fitness_w1 * 1. / std::hypot(m_closed_obsts_xy.first - x_tmp, m_closed_obsts_xy.second - y_tmp) + this->m_fitness_w2 * std::hypot(m_pso_target_xy.first - x_tmp, m_pso_target_xy.second - y_tmp);
-                    this->m_swarm[i][swarm_depth_end_index].fitness = this->m_fitness_w2 * std::hypot(m_pso_target_xy.first - x_tmp, m_pso_target_xy.second - y_tmp);
+                    this->m_swarm[i][swarm_depth_end_index].fitness = this->m_fitness_w1 * 1. / std::hypot(m_closed_obsts_xy.first - x_tmp, m_closed_obsts_xy.second - y_tmp) + this->m_fitness_w2 * std::hypot(m_pso_target_xy.first - x_tmp, m_pso_target_xy.second - y_tmp);
+                    // this->m_swarm[i][swarm_depth_end_index].fitness = this->m_fitness_w2 * std::hypot(m_pso_target_xy.first - x_tmp, m_pso_target_xy.second - y_tmp);
                 }
                 else
                 {
